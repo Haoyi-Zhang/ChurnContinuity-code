@@ -1,0 +1,19 @@
+{
+  "algebra_obligations": 2052,
+  "cpu_seconds": 0.0,
+  "description": "Failures means theorem/oracle disagreement; intentionally mixed generations may reconstruct incorrectly.",
+  "failures": 0,
+  "kind": "exact-small-oracle-pilot",
+  "modulus": 3,
+  "oracle_disagreements": 0,
+  "peak_rss_kib": 93096,
+  "replicated_correct": 972,
+  "replicated_obligations": 1944,
+  "replicated_wrong": 972,
+  "shamir_correct": 72,
+  "shamir_obligations": 108,
+  "shamir_wrong": 36,
+  "total_obligations": 2052,
+  "wall_seconds": 0.0028740610000568267,
+  "workers": 1
+}

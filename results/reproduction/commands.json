@@ -1,0 +1,32 @@
+[
+  {
+    "command": "python reviewer_symbolic_check.py --out reproduced-joint-view",
+    "exit_code": 0,
+    "result": "4,096 exact joint views; 8 equal role/secret distributions; 64 finite-field rank checks"
+  },
+  {
+    "command": "python run.py --pilot --out reproduced-pilot",
+    "exit_code": 0,
+    "result": "2,052 obligations; 0 oracle disagreements"
+  },
+  {
+    "command": "python run.py --out reproduced",
+    "exit_code": 0,
+    "result": "43,407 obligations; 1,000 generated schedule/fault/protocol cases"
+  },
+  {
+    "command": "python validate.py --out validation-reproduced --transcripts reproduced/signed_transcripts.json",
+    "exit_code": 0,
+    "result": "55 tests; 0 failures/errors; 128 signed-evidence cases agree"
+  },
+  {
+    "command": "python verify.py results/full reproduced",
+    "exit_code": 0,
+    "result": "17 deterministic scientific files agree byte-for-byte"
+  },
+  {
+    "command": "python check_evidence.py --authorization inputs/authorized_signers.json --transcripts reproduced/signed_transcripts.json",
+    "exit_code": 0,
+    "result": "128 cases; 16 accepted; 112 rejected; 0 disagreements"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "cpu_affinity_count": 5,
+  "cpu_quota_cores": 4,
+  "cgroup_memory_limit_bytes": 4294967296,
+  "cgroup_memory_at_intake_bytes": 359182336,
+  "available_host_memory_kib": 5049316,
+  "swap_total_kib": 0,
+  "writable_free_bytes": 32029835264,
+  "workers_selected": 1,
+  "experiment_address_space_limit_mib": 2048,
+  "per_command_cpu_limit_seconds": 110,
+  "per_command_wall_limit_seconds": 120,
+  "campaign_cpu_limit_seconds": 21600,
+  "reserved_repair_cpu_seconds": 5400,
+  "campaign_obligation_limit": 100000,
+  "schedule_fault_case_limit": 1000,
+  "experiment_rss_limit_mib": 2560,
+  "final_zip_limit_mib": 128,
+  "raw_container_source_download_bytes": 0,
+  "source_access": "Web tool text and screenshots; direct container downloads failed. No scholarly PDFs redistributed.",
+  "pilot_limit_repair": "An initial 256 MiB virtual-address-space cap caused MemoryError during import, before any scientific obligation. The corrected cap is 2048 MiB; the peak-RSS ceiling remains 2560 MiB. Failed-import CPU was not instrumented."
+}

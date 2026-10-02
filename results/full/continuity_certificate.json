@@ -1,0 +1,184 @@
+{
+  "certificate": {
+    "certificate_version": "continuity-certificate",
+    "context": {
+      "cut_root": "8e8196c5c12552eed607db227049d509a7388c81edc9a4b6dd04fd9537206ac5",
+      "dimension": 8,
+      "epoch": 7,
+      "field_modulus": 1019,
+      "generation": "generation-7",
+      "group_modulus": 2039,
+      "new_members": [
+        "replacement-0",
+        "survivor-1",
+        "survivor-2"
+      ],
+      "old_members": [
+        "retiring-0",
+        "survivor-1",
+        "survivor-2"
+      ],
+      "replaced_slot": 0,
+      "service": "recommendation-service",
+      "session": "session-7-0"
+    },
+    "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+    "mask_commitments": {
+      "1": 1863,
+      "2": 1550
+    },
+    "new_commitments": [
+      1186,
+      885,
+      486
+    ],
+    "old_commitments": [
+      1603,
+      1698,
+      1350
+    ],
+    "proposals": [
+      {
+        "signature_hex": "eba337c40e85f41dd13c4cad53f1137d56cbbac8da2cb535dbdf97a935698b8947bfee669134f1e164a98be339673e01da6deb1d2dda6718e86bddca0e254701",
+        "statement": {
+          "body": {
+            "dimension": 8,
+            "mask_commitment": 1863,
+            "target_component": 1
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "MASK_COMMIT",
+          "role": "SURVIVOR_PROPOSAL",
+          "signer": "survivor-2"
+        }
+      },
+      {
+        "signature_hex": "ef4828542ec180f5ce9d5828980a364d2cc0381d2db5883ead3823d67b096dda5135fbbd13864796d70eb961d0f287c889021c1d65989f9982b6791d8736ea00",
+        "statement": {
+          "body": {
+            "dimension": 8,
+            "mask_commitment": 1550,
+            "target_component": 2
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "MASK_COMMIT",
+          "role": "SURVIVOR_PROPOSAL",
+          "signer": "survivor-1"
+        }
+      }
+    ],
+    "receipts": [
+      {
+        "signature_hex": "b56630ebc0528e389b7fa1f4a665846d33ee422c3c1d93d7fb13138d02b7c5fb8a7dbfa8466494006d4a94d8ea28cc6e692a7b1ab66d2fe7cf82d9bc895b100a",
+        "statement": {
+          "body": {
+            "commitment": 1186,
+            "component": 0,
+            "generation": "generation-7"
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "PERSIST_RECEIPT",
+          "role": "DURABLE_COMPONENT",
+          "signer": "survivor-1"
+        }
+      },
+      {
+        "signature_hex": "0822c4dcf7596bc3b8ed605f3765c8d3ba55ee6fad33eb5dfd9cc80cde708dfa4c00765a4cc2c1a6fca63f7acde598cb441e5bbf5b0525b2bb769656fcc3d00e",
+        "statement": {
+          "body": {
+            "commitment": 1186,
+            "component": 0,
+            "generation": "generation-7"
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "PERSIST_RECEIPT",
+          "role": "DURABLE_COMPONENT",
+          "signer": "survivor-2"
+        }
+      },
+      {
+        "signature_hex": "0b0eceae2c1ae80da27069abebd073a750994b9da2ff38d274d95f7fd8cadbd814587a56209aede2786169c4f7d00e9410e4a3f6cb84d286e79924189c69a30d",
+        "statement": {
+          "body": {
+            "commitment": 885,
+            "component": 1,
+            "generation": "generation-7"
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "PERSIST_RECEIPT",
+          "role": "DURABLE_COMPONENT",
+          "signer": "replacement-0"
+        }
+      },
+      {
+        "signature_hex": "53c5e4c5dde6a5cc9ac77641fbc367d9bd4fc3f9a31a78396c102397538d780e79e329270d6c13100c04c0fec126a0139a1d3c0a71ce05a19f9ab9afe38c3d03",
+        "statement": {
+          "body": {
+            "commitment": 885,
+            "component": 1,
+            "generation": "generation-7"
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "PERSIST_RECEIPT",
+          "role": "DURABLE_COMPONENT",
+          "signer": "survivor-2"
+        }
+      },
+      {
+        "signature_hex": "96556abc6f4094ff82e6293620640274c9d137c295b153a370555132301058401667327b1e4b7aa35f10c0f72a59833388264d0dce1e2cc030194733c116030e",
+        "statement": {
+          "body": {
+            "commitment": 486,
+            "component": 2,
+            "generation": "generation-7"
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "PERSIST_RECEIPT",
+          "role": "DURABLE_COMPONENT",
+          "signer": "replacement-0"
+        }
+      },
+      {
+        "signature_hex": "19bbf4d41fe9dea943f353b21d1439fb426ff517f56dcaffbf4e1007891ae656480cde0b4a25aa8f75342fb763e06e79e42a74f292c86d16574b960ee232770e",
+        "statement": {
+          "body": {
+            "commitment": 486,
+            "component": 2,
+            "generation": "generation-7"
+          },
+          "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+          "kind": "PERSIST_RECEIPT",
+          "role": "DURABLE_COMPONENT",
+          "signer": "survivor-1"
+        }
+      }
+    ]
+  },
+  "new_secret": [
+    23,
+    40,
+    57,
+    74,
+    91,
+    108,
+    125,
+    142
+  ],
+  "old_secret": [
+    23,
+    40,
+    57,
+    74,
+    91,
+    108,
+    125,
+    142
+  ],
+  "public_authorization": {
+    "replacement-0": "bbd5412843847f3673fb561a2bd1da50437d19e819779354628301659910b74b",
+    "retiring-0": "d9d6bb04a2ecaa34447f4c7e0becd508ac6c9c0322c2b6b4186ce7611964d2c4",
+    "survivor-1": "dbb0562309863990bc63a7e370c407f6fd643581e2c052cf735811be864203d9",
+    "survivor-2": "01be88d23702121138c01393e2009a34aca3464ff5119c6e286df80cbd7f989b"
+  },
+  "toy_group_warning": "2039/1019 is an exhaustive-check fixture, not a production security parameter"
+}

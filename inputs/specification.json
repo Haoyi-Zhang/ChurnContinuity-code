@@ -1,0 +1,59 @@
+{
+  "arithmetic": {
+    "pilot_prime": 3,
+    "main_prime": 5,
+    "ring_moduli": [
+      4,
+      8,
+      16
+    ],
+    "ring_coefficients": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "schedules": {
+    "events": [
+      "A0",
+      "A1",
+      "A2",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "selection": "all 6! permutations; no probabilistic sampling",
+    "count": 720,
+    "modulus": 101,
+    "clients": 4,
+    "items": 8,
+    "admitted_ratings": 8,
+    "epochs": 1,
+    "generations": 2,
+    "components": 3,
+    "attempts": 1
+  },
+  "crashes": {
+    "orientation_masks": 8,
+    "crashed_components": 3,
+    "boundaries": [
+      "before-stage",
+      "after-stage",
+      "after-persist",
+      "after-ready"
+    ],
+    "count": 96
+  },
+  "semantics": {
+    "count": 24
+  },
+  "signed_evidence": {
+    "families": 8,
+    "instances_per_family": 16,
+    "count": 128
+  },
+  "total_generated_schedule_fault_cases": 968,
+  "workers": 1,
+  "randomness": "Exhaustive domains and public deterministic fixtures; no training, tuning, or held-out statistical test."
+}

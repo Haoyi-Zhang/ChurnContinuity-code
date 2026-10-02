@@ -1,0 +1,33 @@
+case,kind,name,observed,expected,note
+continuity-00,honest,valid-certificate-and-durable-copies,1,1,"The public certificate verifies, all six replicas are durable, and the vector is unchanged."
+continuity-01,crash-replay,after-mask-2-survivor-1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-02,crash-replay,after-mask-1-survivor-2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-03,crash-replay,after-prepared-proposal:2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-04,crash-replay,after-prepared-peer-mask:2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-05,crash-replay,after-prepared-replacement-component:2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-06,crash-replay,after-prepared-proposal:1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-07,crash-replay,after-prepared-peer-mask:1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-08,crash-replay,after-prepared-replacement-component:1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-09,crash-replay,after-component-0-survivor-1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-10,crash-replay,after-component-0-survivor-2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-11,crash-replay,after-component-1-replacement-0,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-12,crash-replay,after-component-1-survivor-2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-13,crash-replay,after-component-2-replacement-0,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-14,crash-replay,after-component-2-survivor-1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-15,crash-replay,after-receipt-1-replacement-0,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-16,crash-replay,after-receipt-2-replacement-0,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-17,crash-replay,after-receipt-0-survivor-1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-18,crash-replay,after-receipt-2-survivor-1,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-19,crash-replay,after-receipt-0-survivor-2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-20,crash-replay,after-receipt-1-survivor-2,1,1,A crash clears volatile state; replay of the persisted deterministic session completes safely.
+continuity-21,mutation,changed-new-commitment,0,0,The full verifier rejects this independently generated mutation class.
+continuity-22,mutation,changed-mask-commitment,0,0,The full verifier rejects this independently generated mutation class.
+continuity-23,mutation,proposal-signature-bitflip,0,0,The full verifier rejects this independently generated mutation class.
+continuity-24,mutation,missing-receipt,0,0,The full verifier rejects this independently generated mutation class.
+continuity-25,mutation,context-epoch-substitution,0,0,The full verifier rejects this independently generated mutation class.
+continuity-26,ablation,omit-algebraic-links,1,1,A weak verifier accepts an authenticated but secret-changing commitment vector; the full verifier rejects it.
+continuity-27,ablation,omit-receipt-body-generation-consistency,1,1,Freshly re-signed receipts whose body generation conflicts with their current signed context are accepted only by the weakened equality check.
+continuity-28,ablation,single-receipt-per-component,1,1,A weak availability certificate has no surviving copy guarantee after its sole signer becomes unavailable.
+continuity-29,replay-control,unaltered-cross-context-receipt-transplant,1,1,Unmodified receipts from another signed context are rejected by context_id even when the redundant body-generation check is disabled.
+continuity-30,evidence,invalid-signed-mask-opening,1,1,The evidence exposes only a signed random mask opening and its failed commitment equation.
+continuity-31,evidence,same-session-mask-equivocation,1,1,"Two authentic roots for one sender, target and context are publicly contradictory."

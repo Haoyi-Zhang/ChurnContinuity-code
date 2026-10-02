@@ -1,0 +1,63 @@
+{
+  "clients": 4,
+  "items": 8,
+  "modulus": 101,
+  "ratings": [
+    {
+      "client": "client-0",
+      "sequence": 0,
+      "item": 0,
+      "value": 1,
+      "commitment": "opaque-token-0-0"
+    },
+    {
+      "client": "client-0",
+      "sequence": 1,
+      "item": 3,
+      "value": 1,
+      "commitment": "opaque-token-0-1"
+    },
+    {
+      "client": "client-1",
+      "sequence": 0,
+      "item": 1,
+      "value": 1,
+      "commitment": "opaque-token-1-0"
+    },
+    {
+      "client": "client-1",
+      "sequence": 1,
+      "item": 4,
+      "value": 1,
+      "commitment": "opaque-token-1-1"
+    },
+    {
+      "client": "client-2",
+      "sequence": 0,
+      "item": 2,
+      "value": 1,
+      "commitment": "opaque-token-2-0"
+    },
+    {
+      "client": "client-2",
+      "sequence": 1,
+      "item": 5,
+      "value": 1,
+      "commitment": "opaque-token-2-1"
+    },
+    {
+      "client": "client-3",
+      "sequence": 0,
+      "item": 3,
+      "value": 1,
+      "commitment": "opaque-token-3-0"
+    },
+    {
+      "client": "client-3",
+      "sequence": 1,
+      "item": 6,
+      "value": 1,
+      "commitment": "opaque-token-3-1"
+    }
+  ]
+}

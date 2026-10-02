@@ -1,0 +1,210 @@
+[
+  {
+    "context": [
+      "service",
+      0,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      1,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      2,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      3,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      4,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      5,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      6,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      7,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      8,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      9,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      10,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      11,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      12,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      13,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      14,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  },
+  {
+    "context": [
+      "service",
+      15,
+      [
+        "alice",
+        "bob",
+        "carol"
+      ],
+      "alice"
+    ],
+    "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+  }
+]

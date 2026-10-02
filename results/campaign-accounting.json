@@ -1,0 +1,70 @@
+{
+  "conservative_whole_campaign_cpu_upper_bound_seconds": 3440,
+  "cumulative_retained_counted_obligations": 89049,
+  "hard_limits": {
+    "address_space_mib": 2048,
+    "campaign_cpu_seconds": 21600,
+    "per_command_cpu_seconds": 110,
+    "per_command_wall_seconds": 120,
+    "rss_ceiling_mib": 2560,
+    "workers": 1
+  },
+  "maximum_retained_peak_rss_kib": 102060,
+  "measured_retained_process_cpu_seconds": 4.486956,
+  "measured_runs": [
+    {
+      "counted_obligations": 2052,
+      "name": "pilot",
+      "peak_rss_kib": 93096,
+      "timed_wall_seconds": 0.0028740610000568267,
+      "total_process_cpu_seconds": 0.7724279999999999
+    },
+    {
+      "counted_obligations": 43407,
+      "name": "retained-full",
+      "peak_rss_kib": 102052,
+      "timed_wall_seconds": 0.4264754499999981,
+      "total_process_cpu_seconds": 1.264285
+    },
+    {
+      "counted_obligations": 183,
+      "name": "retained-validation",
+      "peak_rss_kib": 100912,
+      "timed_wall_seconds": 0.23136987099996986,
+      "total_process_cpu_seconds": 1.1875529999999999
+    },
+    {
+      "counted_obligations": 43407,
+      "name": "clean-reproduction-full",
+      "peak_rss_kib": 102060,
+      "timed_wall_seconds": 0.43140387299990834,
+      "total_process_cpu_seconds": 1.26269
+    }
+  ],
+  "notes": [
+    "The conservative bound includes development and repair executions not retained as scientific outputs; it is intentionally much larger than the measured retained-run sum.",
+    "Repeated runs demonstrate deterministic local reproduction and are not counted as new scientific diversity.",
+    "Timing and resource telemetry are reported separately and are not deterministic scientific outputs or deployment-performance results.",
+    "The retained full campaign starts executing protocol servers with empty sender outboxes, covers every one of 20 individual persistence boundaries, and builds proposals and receipts from executing durable outboxes.",
+    "The joint-view checker is an auxiliary one-coordinate finite model with blindings and eight correlated commitments; it supports but does not replace the written general simulator."
+  ],
+  "reserved_repair_and_reproduction_seconds": 5400,
+  "resource_intake": {
+    "external_compute_used": false,
+    "gpu_used": false,
+    "logical_cpus_observed": 5,
+    "swap_mib": 0,
+    "workers_used": 1
+  },
+  "retained_scientific_scope": {
+    "deterministic_files_compared": 17,
+    "distinct_claim_linked_obligations": 43407,
+    "distinct_generated_schedule_fault_protocol_cases": 1000,
+    "joint_view_distribution_comparisons": 8,
+    "joint_view_exact_assignments": 4096,
+    "joint_view_rank_checks": 64,
+    "physical_protocol_cases": 32,
+    "unit_tests": 55,
+    "validation_checks_including_evidence_replay": 183
+  }
+}

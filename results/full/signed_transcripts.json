@@ -1,0 +1,7298 @@
+[
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-000",
+    "expected": true,
+    "left": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "a187ecc78d8705e71a22449b9b2a4dcdad656090ca4d8935b647698a7dd18752c5ff1dec9d59aa34381722933516bfe68a4ba3b6b776fb74b531db3eacd0c70c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-001",
+    "expected": true,
+    "left": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "6b66f41f9eedae6c0717dcdd01abfa4a1d6ea2dfdb361b32e04f71b7f01ca47144179261599df3a9a8f39a72a3fab3e7bcc4602de7a893628e884db5ca962402",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-002",
+    "expected": true,
+    "left": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "6c7cb9d289607d98545f2cc90930ce4adbc83d4b3d076c5dabd290920f65f252c8fb1e4f3b57bada30a85ffa663997ebab4603df6c86f82239bbe862f4494f05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-003",
+    "expected": true,
+    "left": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "922bc0467d4ad06e881f4789539a54b8216ef1253f68dfe937ef0d4ea00289cdd12a582f38ab95e186781be892b3b3bb98e945e8ffb932d379b01c01644c9c0d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-004",
+    "expected": true,
+    "left": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "ed6057d28c2d8b6d7c61db54075dc0d82786c2975031a055d25bd9c1ec97284342afab9f43e6ffb0280d182208f9c1cbe3e68d577eb7be2f6619947ccaa24100",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-005",
+    "expected": true,
+    "left": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "b08a8b8daf30cb23c9bfcec10ed325061bca6c6dd113a93f2cfb76689faf74fa6df7d452529349e7c39de5c5e2416ba026560e0274789bde2cd7492da3774204",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-006",
+    "expected": true,
+    "left": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "17002e648a6655bb6f52f5bb22782b5381b8926a59b6a3d4a94990eb7e4ca955dced8d4caf401f97f9c3137cae780194c750a5c6775d9c900144a4d9efee7704",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-007",
+    "expected": true,
+    "left": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "f8e01c2276562507b629d30cd455489adeb5475b2920c80f0674acfaeb7d9227d1e440ae08e7a5dff1330d3ddc3d7f9c247435b6093f7100d002dc90de0a220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-008",
+    "expected": true,
+    "left": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "e20fca1bfd295c3ca2f86eb840285af6fed29bcc909b982fe11f35a46f63abc8acb2619324cf35436606938380d9da17b3821f8fc2fb224e329edc31bb8e260a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-009",
+    "expected": true,
+    "left": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "1ebeeabed0e3abeda913d95597256643e8bf6d63cb934f128f1bff82cc06b782d6d7d6f3a56e7ec81162fe79047899cf8734fbebcf5677ef5584fd140bf81101",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-010",
+    "expected": true,
+    "left": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "1657b96a95ade20f75dbc7dd000306bdf74b9a3d2879fb7c0fdf67bd7a55ab28d923096278ada2da55921b2c7066f3b7e58543194fcfa07354f58ec3b1ecfe05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-011",
+    "expected": true,
+    "left": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "21b3b0a65540f9cc9d79714591f6176c1266ee71682737c769de8337f965e9344d70ddf0db2aa9caa2eab273a52137647de754c428a97ddbe73df685ebe3e308",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-012",
+    "expected": true,
+    "left": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "e7908c5aff8fb2c342b7d908e09a6578d0dedeab163d62e1fa0417cae71636929037083911749441ad8438ec384bf32e3f52a1725ea240aef3be63f97ba60004",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-013",
+    "expected": true,
+    "left": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "0b31d45fac02c2c05c174649010ae3343a2396d22cdd614913c667b2cf10e71cfe91a53c17379163ff9a21f0c6a97b9a053e07b5355701b5385c3d2c5748bf0c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-014",
+    "expected": true,
+    "left": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "8f0cef374669f8f384b22de5b759e34c79e4e18e96a307c8b6791d50f9cb41060d76352694e33f6ab3aa020d677344cc7ab62b030e84d52713fab2e797b67906",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-015",
+    "expected": true,
+    "left": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "46039b041dd104343490c0c8ea7d7be6d303059537bd7051d56c8d538b1a8f2f2e08f8b388c889eb03a9c8678c3412f0dbff85f408fccb1d3bb43a1cf83b9d0c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-016",
+    "expected": false,
+    "left": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-017",
+    "expected": false,
+    "left": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-018",
+    "expected": false,
+    "left": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-019",
+    "expected": false,
+    "left": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-020",
+    "expected": false,
+    "left": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-021",
+    "expected": false,
+    "left": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-022",
+    "expected": false,
+    "left": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-023",
+    "expected": false,
+    "left": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-024",
+    "expected": false,
+    "left": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-025",
+    "expected": false,
+    "left": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-026",
+    "expected": false,
+    "left": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-027",
+    "expected": false,
+    "left": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-028",
+    "expected": false,
+    "left": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-029",
+    "expected": false,
+    "left": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-030",
+    "expected": false,
+    "left": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-031",
+    "expected": false,
+    "left": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-032",
+    "expected": false,
+    "left": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "4ae428e5e84730dc8ac24ebe2efedfaf4fc2cb509f7a31ce58b452c88b8354fda3a924f5b2edb642cee24420d98ccfe8d227f19a619537fac3a70f1fe7549904",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-033",
+    "expected": false,
+    "left": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "3aa92dce7cf4ef9e1e6d6d7eff97ddda4f47d4bcb80cae929b214e5c0c9f440a6b08da9e8eb456c233dcfd652a181d35b0b3f34c6cdd94be6beb750a748ab104",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-034",
+    "expected": false,
+    "left": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "3b86cec62a8dbd8ed97e889e2969374d158b99eacc7d2b4e406fa755acf9188b7ba58af0f30e2a3a7e734d704bff7e39e3a5ddd5282a57f6c305d4ad03e1c000",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-035",
+    "expected": false,
+    "left": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "0a0cbe252ea76cc4ca1416cc2fb3c67bac33ead58475a3e96e8beee90bc51834e761501ed94b2655a48ed23e4ca6e8958c529c84625e026e1a97dbcf94ed8703",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-036",
+    "expected": false,
+    "left": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "dca8822cc1bad34d4566508a49603d7569322e04995e4cba615066d01f9288f17caf7ee167fd486525816ab771f8caf989609a01c8491a368ac1899f7b26c400",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-037",
+    "expected": false,
+    "left": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "4fdaca08f5166899b75e8b0d11979a07a719e20e16bdd1beb5b61f05ef0d3cf0a531062b641909d5ae09ea3e706ed0ddccc5d2fe7a202864a2dadb5210e1ce0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-038",
+    "expected": false,
+    "left": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "7d22139eafba5e2531cea0131a15d2d919afb82c934e70f5c9fea1d5fa8b77e7512a028cc35f59026501a4861ce3cadcb31b8d67cdc7e624b8e463e21c67e30a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-039",
+    "expected": false,
+    "left": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "7fd41ff8d885c9e3fc41b165fdcb7499d5f3f4922f3ed46bdde14cdc84f6bdbc29a06e178a5763f91a4571faa7ba169583881b1b1f6f4ad61b32db39d2da0b08",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-040",
+    "expected": false,
+    "left": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "729fa6a76439c2df2f1671e00b781056bbafc54b108558855a58d50ba979ad5276304899c22518fbddcd322644b5860056b44c45b1446eb67de7b7b5cc3f9009",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-041",
+    "expected": false,
+    "left": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "c4c47e1c1c5a500613ba9148545cd763058d67a1471fdcc1aac58ea3201d17e11bac6421e9aaff9fe488a3199ca1d9ebb2a16bf5efa1397d337eba227f6ced03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-042",
+    "expected": false,
+    "left": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "0730f4faf3d149c614de7d5eb17a50ccea571034c61b07baf96cc361da456ca2f896c23fd742826f2ed6b3de8e20ec72545a3f07541238cd78fbce452fb0ae0c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-043",
+    "expected": false,
+    "left": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "152649006ed684b7fc508b1ae502e4a0b82ebf2605f67821ec0ed985828afd40e75a25c5ab4fbef5c49ea39db0160ce92ba2ffa4c6cd1510da7db6cc87c0db08",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-044",
+    "expected": false,
+    "left": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "bf0bf2b8d1527f4f3675d61afad4c12c240c2628f7e84bbf48be18f911f173b6622a7e20031e0403320f164c033217f181a877e3aa06c83e35a8cf8370223e01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-045",
+    "expected": false,
+    "left": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "0452c8d56894fe44e2cc82beaffd5fa9b0850a99d7f33d4469dfdc063f43fb5a2f2272b15cc7dc93edd8a6cdb6971486ec661d6263960fbdf94742537e44760d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-046",
+    "expected": false,
+    "left": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "d312419a97db4901cd469ada457d6f6d5484d18b2157e4590c5ae07d319cdc087ac4df007584926d1e4466c8e26a3517669708eb1e476526187ff06bc215dd05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-047",
+    "expected": false,
+    "left": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "2bcf3d60ecacdf1ab7197ad44441af8b1b4d98fd6d3d0c0d99b8e1e85beea5bd503aa56927a5ff9f0c6fe090282e95059c70d3bd69fd40ac7114877a13343001",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "other-generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-048",
+    "expected": false,
+    "left": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "a1f650fec6e113e4666a35a50363cc26632a3a03d1d7b05aec9775cf496e2f7b09a05f0a09f378997f09651d57afac6994975b36aba828b85937d98957f33303",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-049",
+    "expected": false,
+    "left": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "87c01a833ff8818387527319e90e17353655d534623fd2a35205d9b1bdac374536d6f85d0247ff2305f7775d90da4b92680edafedd87be862a753282977d0402",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-050",
+    "expected": false,
+    "left": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "2417021caa0ddd1d12cdfe5f1f37b89e4eaecdc7b69c065c987597a23322090dea1e640d4e6884e61982a8c1d3cbbfe8e06af14d6148e06e776a1c60aea66200",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-051",
+    "expected": false,
+    "left": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "23cbf691659d13a22a4b3e2d909d0627e4e2a97962da16fd3ed8a0d1555ec2ad5bf869c145d03bb68ae8a4967d1d8560e21fb9077f44ea0f30afcc9413fcdf0d",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-052",
+    "expected": false,
+    "left": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "d64da2a4f06c4695e765be3b7bd3bdf93d2fa66c7756d5fe01b3440f5c514fab91ae455927a94205b19062bfd09f25fae7326cf7ad03370595444172fb7f1002",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-053",
+    "expected": false,
+    "left": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "eddcb0eaf38cc410ae48c7d0171e0dde85cb88be496da857d4078a01c86f2b4a988ef765e3bec1c24170f4838a70237263b0a3ddf0394e2086b2af332ee2580a",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-054",
+    "expected": false,
+    "left": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "64cbde323fef686f1b87fe6192466b3a3d751041f7764ee84427ebfd30afa5657cdcc7f3fefa2d8ef72ebf68bf8575ca3e347f4da9b13c143584003dd72dfb0a",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-055",
+    "expected": false,
+    "left": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "48f104c48f08b3529a0011b1304eee670df86ec5998213c559bfdc6b39278feff31200b1522eb345a77d13c78c654bf50c0d06ea8866ca1e07a59286720ebe0d",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-056",
+    "expected": false,
+    "left": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "7c9b43bf900e711b3b8e755bbe14626097781d085a6cc02218be2627482ab774cc96eb8b7a3178b6fa48e35f646e0a7da2a3f33ce27acd88278aafdd3d34f909",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-057",
+    "expected": false,
+    "left": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "6d1abffe029686a40c388f044378c713b268897496ca788ee12d3ef2ece652674e601caf4d6915887d9d552f8664992b2cf4516e1542e2b4076cfb3d8ecacb07",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-058",
+    "expected": false,
+    "left": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "8d4294a2a0938e51804330fd03758a0eb379368c4741c9d505c44b694f3644a14c48715428bf6a680065d1c25a1de334ca0c295a13caa88907bbaf7dbd98900e",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-059",
+    "expected": false,
+    "left": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "26399cfc530f0637ae057cc68e808dc6a9517e2b1e8f6a3a93c3ea37ea18fa3f262495b66a691897b0f71b19234600067370e583b1059259705cf8c750bbf405",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-060",
+    "expected": false,
+    "left": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "09ff0491110cdfb0953b62ca98048b99ff6d1c72e00a9a213eaadb6854705921f85aee959dda731cff8237230b0c84eabbb8697120a5bd9e9122374a3352bf0f",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-061",
+    "expected": false,
+    "left": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "311582ac8c106a5b6f18ba6645c2932cb2fedef358d781e50d0f923ad6d4c9fc9aab18f81fa35cc35b3ccc1e13b15a37a47b0ea0c6bdea7810913a5a54881f03",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-062",
+    "expected": false,
+    "left": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "4c0c33630997d878bd9998ed4f4670d4fc6ff2dd40aa5856ab1bb81c39e856219be120abed15cc6a620ec9574f631a48babfbdb817ba401bbc05cd700c119a05",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-063",
+    "expected": false,
+    "left": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "905e70257a7d4b80773941a33edac610226e3aa262384561f45f50c3532f7a2639e4664aa4200b875e78cb35fedd5e4cfc24898b50dcbe618d0a66e24896490b",
+      "statement": {
+        "attempt": "other-attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-064",
+    "expected": false,
+    "left": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "d5caebc80000c3dfd2c8388b989ffd762e2b7c0c17f0fb8bf20677363ca1c338c28221278cd5040f3df246057d613465c16228c951c150a624257a3e91871204",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-065",
+    "expected": false,
+    "left": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "924ddaad4edc40a76a079910ecaca3532be58de77fa2194ae5e7a461ae2fa294c0e2a0e0a1b4bc77e42ccb151909d03105dd23f09e5b0ec108bd34ba47913d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-066",
+    "expected": false,
+    "left": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "58e757f31a4125af5d4b1c94580f9fb3b7cf3477aebf5e600a82954aa8a19c16d4d84d5747d6146233b45843ab9a910abeadda4801298be8a1a06c6b7c380a0d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-067",
+    "expected": false,
+    "left": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "fea7da1a1b6c173c12162428c5fc2a11f895fbc76f0c820ddb9e989562ab1b310e61f79b666271bd042a87d48f98b95df4a9501f0cb4abe1f778ca1077e0f20a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-068",
+    "expected": false,
+    "left": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "e66e23606ff005cd05a9777286f77f3f905e6f9a57b6a3e264362c0c24f19d831d5bb7dc02a88df29fead2de702db8e299231e9ab9c3b6b7d2fa34366b1d980f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-069",
+    "expected": false,
+    "left": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "b03622e157f21c08f44c8a5575c5f0441b11614124188ae0871325095eb4a0d2676dd81fa43d269c389d075864b0edf224eaa8a4b6e003bc0adaf895b7a29206",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-070",
+    "expected": false,
+    "left": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "814a189589a78091b435caa2d589ee57980728a34015b4beb99804cdeca96b8a3d9e3959e9572fc081acd3739f60cbcf8a65c4463eaed66c88300d5e7eec5106",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-071",
+    "expected": false,
+    "left": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "91fc907390a8b5001b87afba2682df22fcda95f799da14a09d06053aa22ddaf3e0d6e02046cf11b806badcf4a0953461fa22156d2db3a0ae15e9dfb4cc4be00b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-072",
+    "expected": false,
+    "left": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "4ca5f3d1b406d9132aa14bf57673e01ffc48ea9009529e13dc74f76e4dd0f9c0a1770c9f4d963431da9a6af99baa1f3610ddd3eef7556f3df3bc8bb9f959f602",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-073",
+    "expected": false,
+    "left": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "00f89eab81730abddc21caa4fe972e9a0a81ee2173ec553a594051cac411df59239adda472241e6d4ced13f846d343057d8bf96cb1c064dd4c7598cd72a17503",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-074",
+    "expected": false,
+    "left": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "3bc55a7b45c5f7b7122cdaf19db0ee8366fe5ed136f60b81b7b1139a6ed8e6c95396c37b13b70905c8ac42cedfe3dc4b37e3fe7ed9a7bd73e438900c2413170e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-075",
+    "expected": false,
+    "left": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "f8aa8efd44a3fc22b7d2af057d70104d31fd810873d76f223df87124ade9cd493e0f890e4e8167decde04e7a0ec2fedd786bbc304e1d5d512d25445f9f6c7200",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-076",
+    "expected": false,
+    "left": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "2fd16f801a31918082d7895c564f7ca805079cfbfe6faacdb481ed4a5b3b3b96db360f052faf19271dca5ab30d9b8db90cc95b9e16783f2a923034b364c24205",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-077",
+    "expected": false,
+    "left": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "3e503d705330b9ed93032089269a01781af1262db918ac5a9ac5116c066db85feb7c15b29495817b322fcd411f7aacb5ceef0ef844f55178e9e949ff31207f00",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-078",
+    "expected": false,
+    "left": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "91cc29720e2a2f78025a252679c374003c5d6ec0a687d2bdba21d307c23650f1216952a4db3e831064ab119d109a481468161df3f86c4cc5c49335b698fcf500",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-079",
+    "expected": false,
+    "left": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "538a4d970834aa49d8fd02b7668195ea9df7a92832284f2f9cb62c9287bc84305aa18b88f330a44acfcec98f1b689e469c05c2adda9b4149df5dc7d48ebe3c0a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "other-service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-080",
+    "expected": false,
+    "left": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "a087ecc78d8705e71a22449b9b2a4dcdad656090ca4d8935b647698a7dd18752c5ff1dec9d59aa34381722933516bfe68a4ba3b6b776fb74b531db3eacd0c70c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-081",
+    "expected": false,
+    "left": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "6a66f41f9eedae6c0717dcdd01abfa4a1d6ea2dfdb361b32e04f71b7f01ca47144179261599df3a9a8f39a72a3fab3e7bcc4602de7a893628e884db5ca962402",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-082",
+    "expected": false,
+    "left": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "6d7cb9d289607d98545f2cc90930ce4adbc83d4b3d076c5dabd290920f65f252c8fb1e4f3b57bada30a85ffa663997ebab4603df6c86f82239bbe862f4494f05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-083",
+    "expected": false,
+    "left": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "932bc0467d4ad06e881f4789539a54b8216ef1253f68dfe937ef0d4ea00289cdd12a582f38ab95e186781be892b3b3bb98e945e8ffb932d379b01c01644c9c0d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-084",
+    "expected": false,
+    "left": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "ec6057d28c2d8b6d7c61db54075dc0d82786c2975031a055d25bd9c1ec97284342afab9f43e6ffb0280d182208f9c1cbe3e68d577eb7be2f6619947ccaa24100",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-085",
+    "expected": false,
+    "left": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "b18a8b8daf30cb23c9bfcec10ed325061bca6c6dd113a93f2cfb76689faf74fa6df7d452529349e7c39de5c5e2416ba026560e0274789bde2cd7492da3774204",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-086",
+    "expected": false,
+    "left": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "16002e648a6655bb6f52f5bb22782b5381b8926a59b6a3d4a94990eb7e4ca955dced8d4caf401f97f9c3137cae780194c750a5c6775d9c900144a4d9efee7704",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-087",
+    "expected": false,
+    "left": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "f9e01c2276562507b629d30cd455489adeb5475b2920c80f0674acfaeb7d9227d1e440ae08e7a5dff1330d3ddc3d7f9c247435b6093f7100d002dc90de0a220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-088",
+    "expected": false,
+    "left": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "e30fca1bfd295c3ca2f86eb840285af6fed29bcc909b982fe11f35a46f63abc8acb2619324cf35436606938380d9da17b3821f8fc2fb224e329edc31bb8e260a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-089",
+    "expected": false,
+    "left": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "1fbeeabed0e3abeda913d95597256643e8bf6d63cb934f128f1bff82cc06b782d6d7d6f3a56e7ec81162fe79047899cf8734fbebcf5677ef5584fd140bf81101",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-090",
+    "expected": false,
+    "left": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "1757b96a95ade20f75dbc7dd000306bdf74b9a3d2879fb7c0fdf67bd7a55ab28d923096278ada2da55921b2c7066f3b7e58543194fcfa07354f58ec3b1ecfe05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-091",
+    "expected": false,
+    "left": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "20b3b0a65540f9cc9d79714591f6176c1266ee71682737c769de8337f965e9344d70ddf0db2aa9caa2eab273a52137647de754c428a97ddbe73df685ebe3e308",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-092",
+    "expected": false,
+    "left": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "e6908c5aff8fb2c342b7d908e09a6578d0dedeab163d62e1fa0417cae71636929037083911749441ad8438ec384bf32e3f52a1725ea240aef3be63f97ba60004",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-093",
+    "expected": false,
+    "left": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "0a31d45fac02c2c05c174649010ae3343a2396d22cdd614913c667b2cf10e71cfe91a53c17379163ff9a21f0c6a97b9a053e07b5355701b5385c3d2c5748bf0c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-094",
+    "expected": false,
+    "left": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "8e0cef374669f8f384b22de5b759e34c79e4e18e96a307c8b6791d50f9cb41060d76352694e33f6ab3aa020d677344cc7ab62b030e84d52713fab2e797b67906",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-095",
+    "expected": false,
+    "left": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "47039b041dd104343490c0c8ea7d7be6d303059537bd7051d56c8d538b1a8f2f2e08f8b388c889eb03a9c8678c3412f0dbff85f408fccb1d3bb43a1cf83b9d0c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-096",
+    "expected": false,
+    "left": {
+      "signature_hex": "01792f1902abb723eb14b3a3b7cb4daa4e97623b4823f776d68b52b3fa83a898acfec0640dfa7bb99463066b335ef4ac7ffdeb87c423cf6e01b41312c7200705",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "5813944f18e730a15c8bb2f3142eb5f0158db73dc110997098f7bc65e4981822820460b2e74fcf72dd07a7ab910da489254df02247149c3869763a0e849b6e09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-097",
+    "expected": false,
+    "left": {
+      "signature_hex": "ee17e15ff54eba6f5063ef09c4e889e2ece701e05493f1028448f5cc3b75d2017b11b01225a3a02c1e5a4f5d219fafb35ffedd0419f2eccb0dcc08688ee8570d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "04c6c38228fda1458e201b8e679c09b35e4bcce8c7e084040f1b2c1bc1d9e418240c32be987751ef74a97737462c8449717bef55e769d969fb361fef34eb5205",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-098",
+    "expected": false,
+    "left": {
+      "signature_hex": "be5652173d6997c110bec5d85ab8a922d57d4a0eb80d4a80ebc7846d99b8a2347c0e7ac7b0dd21b6af52db42f169db2b277a13b4737a86cc7f9eb2dc695a7d02",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "14a6dddebfad911929f3ec0d7f18b7e1eb33c91178626c320e2e8e555ac28fe0482824e4428210e7bed8ff5ca3e68595cd51afbeb13098872a4e8312815cf80c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-099",
+    "expected": false,
+    "left": {
+      "signature_hex": "cd5e3aaaccad0a089c7b68312cf3038c8ea882076965d649e725aa5b254b91d515e5a193e7a9ac541e4de3b9daf638e94b6d4a2fb31f25d2bb466b1aa937370c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "27f29982f946c2da02286f1a0c73d2b98132692b2fac4e70515d89e14339f9ad24922d2a9abf286324bace2d69b7fadee4f5f71d6cb20b4d1bbeceb6aa403b0a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-100",
+    "expected": false,
+    "left": {
+      "signature_hex": "db7cb7f7decf565e16d80af2dfdba09cea9b9bc6e8e1e3511cc507982b88fecd98efff11064ed743edd81e566b28792233996a02ad47d6d06bb590d20494d900",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "0f3c77efe6eb6c8c8716476f19d251f5931c38d9e0c0abc25d699e20aca353868b17c132edfa5b93b854af8a4ae88779cc2368c33ad5af545e335b5730828f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-101",
+    "expected": false,
+    "left": {
+      "signature_hex": "fbed60a4630e7cd80d4eab6e76f4775a7275b44cb9d42b272c65d5ff60f20ecc4b066253e21be982fc5816bfa04ccb4343388ce163c934001bc1de7ece3b5f0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "0f7b115fe2863fd018f865ed8800498de1d9374e72d8f4179996188876da6aa0dd79fb2b880f1aa222cfe536b85ddc8a7bd3252b0bbb4a8c08c30e4f248abc00",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-102",
+    "expected": false,
+    "left": {
+      "signature_hex": "046f794b173c78eefd6125233bdc281418e5b36fe50de6c8991de80824a1d0a665d67bb18a7a99ee290fb0f5c679f172cd2b6001c29f21fb57e1816b9532d90a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "884149e4a4425ce4775e272ace137ce178f2305050907a2f0509c8e49970f2595a98ae3d0002be11f9a1406d5fa22ce6be624e0fc79843214c24deb4054d2404",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-103",
+    "expected": false,
+    "left": {
+      "signature_hex": "952678d31d6cc850938e31d8503bd9c3c4f5922d3d514fd8b905f6145ad245a27eb94eb428306c6984b321d90dfdb7c6e3cfe2498f39ab0a792e7da167e3fe04",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "25362ab12c68587494b67a3a8f544512bcd5163d5127ce0de1fc785f321435862e34e1fdd47aae7377b24f5d5e9e45c86c6528e2c778eb930a4f8cf331dd670a",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-104",
+    "expected": false,
+    "left": {
+      "signature_hex": "3c86f4e9d601fc0766b7dfd1001e03656d0a87536028d586b80b68b48aa59bf5777fc68109b4d2038eb34a0d08e9396cb211206cf2f72d2f9fa6131f22d95500",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "f09e32e9c47ebb6e895202f48e22dbdbab7043237fbc643814baab15a8ec62ce308463d38b7c71d54681a09db0fc8ac3bcc9972becfbc7413d36368930ac0e0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-105",
+    "expected": false,
+    "left": {
+      "signature_hex": "79e310986aad227e66b334d2b8a6feb3764d05495db43b031580beb5bc66412306ca98bb2f33467a8588907cb58587391bf1d3196e0f7af995af0e17dbd69401",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "5fb40dd6988ffcc9d60b7f657e324c608d552fe6ebbbca5787a71604a8391a68304d7200a87a443f7360f80627502f04f47e8ff6149510a0e5c4d5bc24e3fc08",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-106",
+    "expected": false,
+    "left": {
+      "signature_hex": "8f3dad3e3448edc15c9a51b3837de50fa04f6e2ca46e6451e99ddf745a3e19f19eb81d926664d71825294e99d571333f7423ddf40eb253b3c47648bdbbd8200b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "5dc674688ac54ec7e22ef689fa985e40f6cdb96f2e77c9730b03bc428b59c5a374c6a21d488fae12c96d63a7881121c2a5a9c9b6520103cb958a41ad65486205",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-107",
+    "expected": false,
+    "left": {
+      "signature_hex": "79b61dc8070ea1b8502e3bbf20b1204d3d8d039b8a1393635a5732fbea8e0d461f87d93b206dc7a73a650a898e94618f93bb932452ccbc83c35dbd6977a75f07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "e680ab2326cc2bc5eacf6e026c97d4826f49fff9a47dff2507ea80f36bdb032c9830edda6e19e67e0b31c57737d4462e0bb29e08d8a90bd07597248aa8418b09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-108",
+    "expected": false,
+    "left": {
+      "signature_hex": "fa4cfdf69355ad1c31bb77971859ab27590b16d1750914822a2111903aeeebbd10ae25a11a383d9fcaa8cf55c1e8c71df9cf06e14610a077f4de7b1e612c0b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "371294193678c4e8ceebef844fa2687d464e21f5be9a1b3682591d770d9345bebe21f476eb3d602f1c1ef3f6d53e805a16220afade2d96f056d90fcf20ba4b08",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-109",
+    "expected": false,
+    "left": {
+      "signature_hex": "510abc9b2569ad7d23c216a0ec75ab58603e51aaf4c3f4cd2d7c8ba1c1c75000457b08f7f4e126475c94b904e6a2bd0c770e9f5af01e8dfdf45b50a205c11c05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "d0f622b4c3fd05083036ddf4a77a49e3740801842908629983e3de2c7a415fab13bf85010fd3c325ffeef15a4e6963de1b98d277c60312f5cbb7ac379f71cb0d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-110",
+    "expected": false,
+    "left": {
+      "signature_hex": "8237b9af579994f0ccd0abf811a1c43fb5a94d697b7271c04171287b3b314712bb71207ba2bf20881b40821b5dd71c50551441d933f5e87b1c88a65245bded02",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "20e188e8fb89abe2a7dc686638e9d0121f09b131efa49128bdb342bc488f3838037bf0aaf27e09f3e5990e23f88ed904bb2111293dbdafc1e9d5ca9b2c13dc09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-111",
+    "expected": false,
+    "left": {
+      "signature_hex": "c30b16d5951ddf9e812b9edf44febd58a57334e821fdff4390df1c0e232d0dd88c85e295e51c86a269548816f66dacbb6b264686ba70eccf220fdae68e8b2305",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "b869d6898cbf7351d7186fd3fe081d965c9d8a502e99560e2523c996e3fbf239a3258cf63993f01dabed83ecf52d9b1e76f95b9586408a9f4fe4fa1aaef0e901",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          0,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-112",
+    "expected": false,
+    "left": {
+      "signature_hex": "c1423daa8823c07d7c82cb5487c3e4e2bce0db09c2f06c226194e5c522c1627133acb922b2fa1713cfb84727bae02609eaee0ef03d89ac0efaa5e88b29ac090b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "2a7510e6d47025cd6a21c0d6ca43daf46bb81c9a7a7f9b9db750424487ac4583f2d56551a3ba7bb6b679ae2901e7a0f8f586bd0812b198a0ca58875920d7fd06",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-0",
+        "cut": 8,
+        "epoch": 0,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          1,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-113",
+    "expected": false,
+    "left": {
+      "signature_hex": "cf7946ca743b96b76d39966c9db4b1aac724be464446f0b42553f2961e67cdd60c3847eedc1f626f3459a6d93f663df8efdb38d54b76b80d8b87c8b8d03aed0e",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "324d5e9ab895ce5a85761116aa92b6a0e98b15d8957ae169eea545bb5153276c47fa9f5e3071beecdebac92eb29778f37a3f2f81a75e69b6913dd2723748e708",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-1",
+        "cut": 8,
+        "epoch": 1,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          2,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-114",
+    "expected": false,
+    "left": {
+      "signature_hex": "1505576e8f4a5aa158bb903cf308fac4f3aaa6eed90862d2a964e7f38aa658c65e18dedb6fc5b7c5183ab12e8dbeeff6796de6eed85d28171e4832d23995bd09",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "c5b31449f30ac712ac2fbf2412c7e232300213826c574461c0e4649d405b6cf4289f947b4c6628658d9bc0536ec6a5e551f7aba04e6df5ea07c48ed8e93e5c00",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-2",
+        "cut": 8,
+        "epoch": 2,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          3,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-115",
+    "expected": false,
+    "left": {
+      "signature_hex": "5784e7a41dd9a619f70b9670b6bf4d55d967f0b09aabf072e73d6daf242bf7b2e73bfabf78ae818c9ad4c49f26d70923ab186d31612765d4450d75ccecada50d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "22867105befe59b053ee310afb6c42d5b49b2540d42fd7c80bffc5111f09e10c9fcc13b4bd858942dafd0eb414de627465fa6c4e1531aceb8ec194edd91ae205",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-3",
+        "cut": 8,
+        "epoch": 3,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          4,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-116",
+    "expected": false,
+    "left": {
+      "signature_hex": "74914b7e078a0a91b411906b3e7d477a4bfcbdfa7ff0aba70851891611780d934601d16e26de65c2b74d069e8861e6d11fa22995fcc042bf40fac68e1831220f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "db70d612828744a432151d820484da5bf6c326d612f4ea4c292091c008f9f8b865c5335fa8d112df78acc5766767ce2a17ec9addfe03a5869ff793332ef0ad05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-4",
+        "cut": 8,
+        "epoch": 4,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          5,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-117",
+    "expected": false,
+    "left": {
+      "signature_hex": "15517259f5d777f15e24a762befca21ddd330d697295e7d6bf2dac392d15e71bd85f7431caacfc67b8c3553eebffa108f7b18d466b1d65f8120cff732b57290b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "58eb778116b32f7f5d10f05201850cf0ee211f1c03c30fb351776bfbe512deb79b3baa3366a838bedf935fd798955d3d44bd2f88e2132e922f8c64827350cb06",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-5",
+        "cut": 8,
+        "epoch": 5,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          6,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-118",
+    "expected": false,
+    "left": {
+      "signature_hex": "18b5f3a3c4368690388dc8b4393f403839211271d4e9c70d326d4d3d235647894a35a07b61988c08a92b1dd470bae4b072a0707f532e127917ef8bdf1dd69e05",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "6afed0f9252c4916f642aede2d0ed56030efbbe8d58e7bfcea2a6e8578dfe8116650355996d64496bdf9b9b0ba8d62b9df6228fbcfc5b8940a59eec30c1c920c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-6",
+        "cut": 8,
+        "epoch": 6,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          7,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-119",
+    "expected": false,
+    "left": {
+      "signature_hex": "9a4ee17e59d5418e4513e33eedcb113436d830e1b3c164b02a4272581883092a90f9caaee8519bc132f47c5c0d5cd26de35605b8dc7a2d4e3be4fb6e34071b0b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "b852cf93ca748ec6794b17508240df1c2127e3a939239b161d1bfde1b4937e22d729a6398a14d7b3ed0b695f4a2eb3072619eb25917c36c86f136a82d3c64b06",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-7",
+        "cut": 8,
+        "epoch": 7,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          8,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-120",
+    "expected": false,
+    "left": {
+      "signature_hex": "a3ebad7b3244d47af6858288f7b26ec83c4e91aee22782237d55475f546942fecc4155302e48b2e2b20b318058623a8d2b379f99fc595f15ce141a4d1ad9410f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "61123529b2f055f796af15306433939a2c4bf2e6bb70f4453195feaa84daeef73e86b239a1194319f57181fc984117a195df02b077c6f33df4108786f5b0920d",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-8",
+        "cut": 8,
+        "epoch": 8,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          9,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-121",
+    "expected": false,
+    "left": {
+      "signature_hex": "3fd62a954a7b808f5ade078d32fc54f605a25d92f9b969f1a1b4a1a9dc9b5cf7e6b6f2d7498ba93bfd61735ed0d092ef21e2b44553d8378f6b013a1e0d204309",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "09bbf0b6f3654fda162664d466b292a1859b8ff1fcc6c0fa1b8c51b650dabb765f7a92179d91e7c66aadb3becf0d1c3bc8e2b32b8590f8078c3622163d567b0c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-9",
+        "cut": 8,
+        "epoch": 9,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          10,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-122",
+    "expected": false,
+    "left": {
+      "signature_hex": "7dcfbef22a822077e0ba14f50db5ae0530c9b42e309890459da65553f7d531ffb849d13ab0011e6459bb157a0205b7ef4add0ae5453cc885a96dc2e8c4c50a03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "5d9c5f8c22fcf45ac00186f087990fc573cdaa1d6754f37a67a143cff7511c17975d9b7abc862eacea461cb214ef6ac490083d8bf2c957ea27a39c87fc350806",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-10",
+        "cut": 8,
+        "epoch": 10,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          11,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-123",
+    "expected": false,
+    "left": {
+      "signature_hex": "2b7db8ca82ba1f1c7e24a2b7e821e24df2075ba7ce5669de72ebaa02100f1b87222e00f3f21efe6167952a94de3ad8ef20b20274be13f030270a967aff161f01",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "b4e3105040109a8f39afaed17c36702a071eb36609a5e0024ab6f70dd2aac7a76774818f9296ade4a3e89e7c3fddd8fcd2443bcc8aadb5f066c2a05cc1a3a403",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-11",
+        "cut": 8,
+        "epoch": 11,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          12,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-124",
+    "expected": false,
+    "left": {
+      "signature_hex": "22772f8222a730eb144d70b9d9596f854c2375cad8440e49ce2543bc6aebf1e8415a738e2476821a7ba8e291fc602fe4c28d43bff8140571174897924795b50b",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "01dc2679650fb21c0aa8a12e045585f17f6ad7fd0b4c63e1efdbdbf53f18f67b287175acd5b4f5ea423151454d3b5bbc00b112a7cabfb2d7307562487b809509",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-12",
+        "cut": 8,
+        "epoch": 12,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          13,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-125",
+    "expected": false,
+    "left": {
+      "signature_hex": "ad61359ccbdf671a4152fea5fd712c61fd2fd210279d4c403af62e0885acc4868a5a8ef26da4f2b28df53c2d627cd8e662ecd58234619b5b732566dc6dc07b07",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "d50d2cc361c082b7f414573fbfb8248b414d131e77ea97dbd9dc1ab682423c01f23316740edf4fc82c1ceaa59183f905534f650bed25be934955a6becccecf0c",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-13",
+        "cut": 8,
+        "epoch": 13,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          14,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-126",
+    "expected": false,
+    "left": {
+      "signature_hex": "5c71a815de73338b5701a0a367978d215dcf7b09913743aed8d0bde78854483fb55e729ae679ec0e2e0333ff7f4200f02e9746acf2f75ea4a41d46ebe57a7609",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "16b8020737fc40fed87bcaa338a7673a0e00f82543f473d94f5f198a7613ffe9f8dcd301d108e46429ade3bebfd0147dcd9e0ea2639168a468e2fdd0a6791b02",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-14",
+        "cut": 8,
+        "epoch": 14,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  },
+  {
+    "authorization": [
+      {
+        "context": [
+          "service",
+          15,
+          [
+            "alice",
+            "bob",
+            "carol"
+          ],
+          "alice"
+        ],
+        "public_key_hex": "9bf4a4970a32f63e22fc63036b1255443029c9523f59a8863519f2bd91d6a88e"
+      }
+    ],
+    "case": "evidence-127",
+    "expected": false,
+    "left": {
+      "signature_hex": "82414cb5a3b23a2e44a432da35119b6405dbe1a968e49429e6e6f307b748d28bd00002d09055d2b6254ca45e70ae165c1f6fc1deccbe59c839cad01f1fb87d03",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-left",
+        "service": "service",
+        "signer": "alice"
+      }
+    },
+    "right": {
+      "signature_hex": "40e6b0dcda83bfeff82f530ea2ece32e8033985a7db4552f1adf4fc3fd1815ff772ef2378d4bbb2de9e27bf0f978dd52c5503d80b3c80bc7fc2b745f7c11ed0f",
+      "statement": {
+        "attempt": "attempt",
+        "content": "content-15",
+        "cut": 8,
+        "epoch": 15,
+        "generation": "generation",
+        "membership": [
+          "bob",
+          "alice",
+          "carol"
+        ],
+        "phase": "BIND",
+        "root": "root-right",
+        "service": "service",
+        "signer": "alice"
+      }
+    }
+  }
+]

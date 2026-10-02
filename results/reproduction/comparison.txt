@@ -1,0 +1,1 @@
+All 17 deterministic scientific output files agree byte-for-byte; telemetry is intentionally excluded. This is a local deterministic reproduction check, not an independent correctness proof.

@@ -1,0 +1,53 @@
+{
+  "algebra_obligations": 26500,
+  "certificate_size_points": 4,
+  "continuity_case_failures": 0,
+  "continuity_cases": 32,
+  "crash_cases": 96,
+  "crash_post_replay_correct": 96,
+  "crash_pre_replay_activated": 24,
+  "generated_schedule_fault_cases": 1000,
+  "joint_view_checks_passed": 1,
+  "joint_view_distribution_comparisons": 8,
+  "joint_view_exact_assignments": 4096,
+  "joint_view_rank_checks": 64,
+  "oracle_disagreements": 0,
+  "permutation_cases": 720,
+  "privacy_distributions_equal": 15,
+  "privacy_view_obligations": 9375,
+  "private_opening_bytes_dimension_1": 1630,
+  "private_opening_bytes_dimension_64": 3130,
+  "public_certificate_json_bytes_max": 3717,
+  "public_certificate_json_bytes_min": 3708,
+  "replicated_correct": 10000,
+  "replicated_obligations": 25000,
+  "replicated_wrong": 15000,
+  "ring_obligations": 112,
+  "schedule_outcomes": {
+    "attempt-latest": {
+      "correct": 180,
+      "wrong": 540
+    },
+    "content-latest": {
+      "correct": 180,
+      "wrong": 540
+    },
+    "immutable-pinned": {
+      "correct": 720
+    },
+    "pinned-latest": {
+      "correct": 90,
+      "reject": 630
+    }
+  },
+  "semantic_cases": 24,
+  "shamir_correct": 900,
+  "shamir_obligations": 1500,
+  "shamir_wrong": 600,
+  "signed_contradictions_accepted": 16,
+  "signed_evidence_cases": 128,
+  "signed_negative_controls_rejected": 112,
+  "total_obligations": 43407,
+  "witness_bytes_max": 569,
+  "witness_bytes_min": 558
+}
