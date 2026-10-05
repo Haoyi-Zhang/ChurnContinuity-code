@@ -36,9 +36,13 @@ An old certified generation supplies commitments
 `C_i = Com(z_i; rho_i)` and an authenticated context containing the service,
 epoch, exact cut root, ordered old and new membership, replaced slot, session,
 generation, vector dimension, and arithmetic domain.  The control plane is
-assumed to authorize the ordered memberships and to activate at most one
-certificate per epoch.  Stable request identifiers and the cut root are handled
-by the durable admission ledger in `src/churn/model.py`.
+assumed to authorize the ordered memberships and maintain one current active
+generation per epoch. Base materialization for a sealed epoch is unique;
+subsequent continuity transitions serially advance from the exact previously
+activated commitment/membership tuple using fresh session and generation
+identifiers. Competing successors may not both activate. The legacy base ledger
+in `src/churn/model.py` retains its immutable epoch guard; chain verification
+does not implement this surrounding activation agreement.
 
 The protocol replaces exactly one physical slot at a time.  Let the replaced
 slot be `k`, and let `a=(k+1) mod 3` and `b=(k+2) mod 3`.  Survivor `S_a` stores
@@ -410,11 +414,13 @@ If the equation fails, the signed vector/blinding pair is not an opening of the
 signed root.  Injective encoding prevents interpreting the same signature as a
 different permitted statement. QED.
 
-The disclosed object is a uniformly random resharing mask, not an application
-state component.  One such witness is independent of `x`.  A malformed
-replacement envelope is therefore a private verification failure and abort, not
-a public blame object.  Repeated evidence under mobile corruptions or
-implementation-dependent auxiliary leakage is not analyzed.
+The predicate excludes application-component envelopes but does not prove
+uniformity or state-independence of an arbitrary signed invalid payload.
+A witness is independent of `x` when its underlying mask is independently
+sampled and its fault transformation is state-independent, as in the supplied
+synthetic fixture. Confidentiality of general Byzantine diagnostics is not
+established. A malformed replacement envelope remains a private reject/abort
+object. Repeated evidence under mobile corruption is not analyzed.
 
 **Proposition 2 (equivocation evidence).** Two valid signatures by one signer on
 different mask roots for the same full context and target component prove a

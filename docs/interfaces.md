@@ -49,9 +49,10 @@ A recipient accepts a private envelope only when all of the following hold:
    receipt is unavailable until that durable record exists.
 
 The private component opening is deliberately not copied into the public
-certificate or into the public blame sample.  A signed invalid *mask* opening
-can be disclosed because the mask is independent of the application state; no
-claim is made that disclosing a refreshed component opening is privacy-safe.
+certificate or into the public blame sample.  A signed invalid *mask-labeled* opening
+supports attribution, but authentication does not prove its distribution.
+State-independent disclosure requires an independently sampled mask and a
+state-independent fault transformation; refreshed component openings remain private.
 
 ## Frozen finite domains
 
@@ -94,7 +95,7 @@ All are benign local transformations of synthetic material.
 The public continuity blame sample accepts only an independently signed
 `MASK_OPENING` and exposes that random resharing mask and its blinding.  A
 `MASK_COMPONENT_OPENING` replacement envelope is never accepted as mask-only
-public evidence because its signature covers the component opening as well.  The mask is independent of the shared recommendation vector.  The
+public evidence because its signature covers the component opening as well.  For the supplied synthetic fixture, an independently sampled mask undergoes a state-independent coordinate mutation. The verifier does not establish state-independence of an arbitrary signed invalid payload.  The
 older generic contradiction corpus can expose opaque root strings only.  The
 artifact does not claim that arbitrary diagnostic transcripts are safe to
 publish, nor that repeated disclosures remain private under mobile corruption.
