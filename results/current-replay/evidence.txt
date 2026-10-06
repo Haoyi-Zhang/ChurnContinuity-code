@@ -1,0 +1,1 @@
+{"cases": 128, "accepted": 16, "rejected": 112, "disagreements": 0, "trust_anchor": "separate explicitly supplied authorization file"}

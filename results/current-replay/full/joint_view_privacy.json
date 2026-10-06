@@ -1,0 +1,1258 @@
+{
+  "all_exact_distributions_equal": true,
+  "all_rank_checks_passed": true,
+  "checker": "joint-private-public-view",
+  "exact_assignments": 4096,
+  "exact_distribution_comparisons": 8,
+  "exact_field": 2,
+  "interpretation": "The exact F_2 histograms and finite-field rank witnesses are model-conformance checks for the written role simulators. They do not replace the general proof.",
+  "random_variables": [
+    "z0",
+    "z1",
+    "r0",
+    "r1",
+    "r2",
+    "delta1",
+    "delta2",
+    "tau1",
+    "tau2"
+  ],
+  "rank_checks": 64,
+  "rank_results": [
+    {
+      "augmented_rank": 7,
+      "field_modulus": 3,
+      "generator_log": 1,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 3,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 3,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 3,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 3,
+      "generator_log": 2,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 3,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 3,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 3,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 5,
+      "generator_log": 1,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 5,
+      "generator_log": 2,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        4,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        4,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        4,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 5,
+      "generator_log": 3,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        4,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 3,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        4,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 3,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 3,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        4,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 5,
+      "generator_log": 4,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        4,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 4,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        4,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 4,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 5,
+      "generator_log": 4,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        4,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 7,
+      "generator_log": 1,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        6,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        6,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        6,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 7,
+      "generator_log": 2,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        6,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        6,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        6,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 7,
+      "generator_log": 3,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        6,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 3,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        6,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 3,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 3,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        6,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 7,
+      "generator_log": 4,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        6,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 4,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        6,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 4,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 4,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        6,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 7,
+      "generator_log": 5,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        6,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 5,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        6,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 5,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 5,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        6,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 7,
+      "generator_log": 6,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        6,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 6,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        6,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 6,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 7,
+      "generator_log": 6,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        6,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 1019,
+      "generator_log": 1,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        1018,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        1018,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 1,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        1018,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 1019,
+      "generator_log": 2,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        1018,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        1018,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 2,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        1018,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 1019,
+      "generator_log": 17,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        1018,
+        0,
+        17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 17,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        1018,
+        0,
+        17,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 17,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        17,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 17,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        1018,
+        0,
+        17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    },
+    {
+      "augmented_rank": 7,
+      "field_modulus": 1019,
+      "generator_log": 511,
+      "randomness_rank": 7,
+      "role": "retiring",
+      "secret_shift_witness": [
+        1018,
+        0,
+        511,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 12
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 511,
+      "randomness_rank": 9,
+      "role": "survivor-a",
+      "secret_shift_witness": [
+        0,
+        1018,
+        0,
+        511,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 511,
+      "randomness_rank": 9,
+      "role": "survivor-b",
+      "secret_shift_witness": [
+        0,
+        0,
+        0,
+        0,
+        511,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 20
+    },
+    {
+      "augmented_rank": 9,
+      "field_modulus": 1019,
+      "generator_log": 511,
+      "randomness_rank": 9,
+      "role": "replacement",
+      "secret_shift_witness": [
+        1018,
+        0,
+        511,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "view_dimension": 16
+    }
+  ],
+  "roles": [
+    "retiring",
+    "survivor-a",
+    "survivor-b",
+    "replacement"
+  ],
+  "scope": "one scalar, one replacement at slot 0, four protocol-following physical roles",
+  "view_excludes": [
+    "actual signature bytes (fixed-key signing is post-processing of represented statements)",
+    "cryptographic hardness of the tiny cyclic group",
+    "multiple vector coordinates",
+    "malicious deviations and mobile corruption"
+  ],
+  "view_includes": [
+    "role-visible component values and component blindings",
+    "role-visible mask values and mask blindings",
+    "C0,C1,C2,D1,D2,C0-prime,C1-prime,C2-prime",
+    "all three commitment-link relations"
+  ]
+}

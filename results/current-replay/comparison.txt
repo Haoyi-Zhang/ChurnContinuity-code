@@ -1,0 +1,1 @@
+All 17 deterministic scientific output files agree; timing is reported separately. This is a reproduction check, not an independent correctness proof.

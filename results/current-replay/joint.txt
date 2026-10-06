@@ -1,0 +1,13 @@
+{
+  "exact_assignments": 4096,
+  "exact_distribution_comparisons": 8,
+  "note": "The exact F_2 histograms and finite-field rank witnesses are model-conformance checks for the written role simulators. They do not replace the general proof.",
+  "rank_checks": 64,
+  "roles": [
+    "retiring",
+    "survivor-a",
+    "survivor-b",
+    "replacement"
+  ],
+  "success": true
+}

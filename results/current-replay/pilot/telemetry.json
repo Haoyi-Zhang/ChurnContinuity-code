@@ -1,0 +1,13 @@
+{
+  "address_space_cap_mib": 2048,
+  "cpu_seconds": 0.006847865000000002,
+  "mode": "pilot",
+  "obligations": 2052,
+  "peak_rss_kib": 14920,
+  "per_command_cpu_limit_seconds": 110,
+  "per_command_wall_limit_seconds": 120,
+  "rss_ceiling_mib": 2560,
+  "total_process_cpu_seconds": 0.029217,
+  "wall_seconds": 0.007080152000000339,
+  "workers": 1
+}

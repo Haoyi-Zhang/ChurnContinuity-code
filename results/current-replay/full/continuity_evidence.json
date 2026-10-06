@@ -1,0 +1,82 @@
+[
+  {
+    "signature_hex": "87e7826e54cbf30ffb257a758a3b75b03103af091307311bad59a025cc0f5ac6c8e3834a9804ec273cb724ee02a33e8d38a53dcab11320eeaaab485b4bd01609",
+    "statement": {
+      "body": {
+        "blinding": 331,
+        "dimension": 8,
+        "mask_commitment": 1550,
+        "recipient": "survivor-2",
+        "target_component": 2,
+        "values": [
+          995,
+          180,
+          184,
+          11,
+          107,
+          337,
+          415,
+          859
+        ]
+      },
+      "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+      "kind": "MASK_OPENING",
+      "role": "PRIVATE_OPENING",
+      "signer": "survivor-1"
+    }
+  },
+  {
+    "signature_hex": "31bae6d0e2e04958ba38443d5144f68fa7e1c082f393a049394d9ec3e66cbcf557cf90bd1f786eb556e1d78346c739260f924a08d1b104a88de1acea3182e601",
+    "statement": {
+      "body": {
+        "blinding": 331,
+        "dimension": 8,
+        "mask_commitment": 1550,
+        "recipient": "survivor-2",
+        "target_component": 2,
+        "values": [
+          996,
+          180,
+          184,
+          11,
+          107,
+          337,
+          415,
+          859
+        ]
+      },
+      "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+      "kind": "MASK_OPENING",
+      "role": "PRIVATE_OPENING",
+      "signer": "survivor-1"
+    }
+  },
+  {
+    "signature_hex": "eba337c40e85f41dd13c4cad53f1137d56cbbac8da2cb535dbdf97a935698b8947bfee669134f1e164a98be339673e01da6deb1d2dda6718e86bddca0e254701",
+    "statement": {
+      "body": {
+        "dimension": 8,
+        "mask_commitment": 1863,
+        "target_component": 1
+      },
+      "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+      "kind": "MASK_COMMIT",
+      "role": "SURVIVOR_PROPOSAL",
+      "signer": "survivor-2"
+    }
+  },
+  {
+    "signature_hex": "dd268772596196368d37f260c182cfaee1e76d898e9d8a4671ff276d9f46e1e9427c978606c12123d1a8716e48d688ac9f0fd1cf1ec341d7aca0c022981e1a0d",
+    "statement": {
+      "body": {
+        "dimension": 8,
+        "mask_commitment": 1834,
+        "target_component": 1
+      },
+      "context_id": "89c6a80eaed42806e7c13a195c81e7b1ea29bfa6e15474a962d9de60c682235a",
+      "kind": "MASK_COMMIT",
+      "role": "SURVIVOR_PROPOSAL",
+      "signer": "survivor-2"
+    }
+  }
+]

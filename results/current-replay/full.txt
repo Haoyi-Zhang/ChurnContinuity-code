@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "algebra_obligations": 26500,
+    "replicated_obligations": 25000,
+    "shamir_obligations": 1500,
+    "replicated_correct": 10000,
+    "replicated_wrong": 15000,
+    "shamir_correct": 900,
+    "shamir_wrong": 600,
+    "oracle_disagreements": 0,
+    "ring_obligations": 112,
+    "generated_schedule_fault_cases": 1000,
+    "permutation_cases": 720,
+    "crash_cases": 96,
+    "semantic_cases": 24,
+    "signed_evidence_cases": 128,
+    "signed_contradictions_accepted": 16,
+    "signed_negative_controls_rejected": 112,
+    "schedule_outcomes": {
+      "attempt-latest": {
+        "correct": 180,
+        "wrong": 540
+      },
+      "content-latest": {
+        "correct": 180,
+        "wrong": 540
+      },
+      "immutable-pinned": {
+        "correct": 720
+      },
+      "pinned-latest": {
+        "reject": 630,
+        "correct": 90
+      }
+    },
+    "crash_pre_replay_activated": 24,
+    "crash_post_replay_correct": 96,
+    "witness_bytes_min": 558,
+    "witness_bytes_max": 569,
+    "continuity_cases": 32,
+    "continuity_case_failures": 0,
+    "privacy_view_obligations": 9375,
+    "privacy_distributions_equal": 15,
+    "joint_view_exact_assignments": 4096,
+    "joint_view_distribution_comparisons": 8,
+    "joint_view_rank_checks": 64,
+    "joint_view_checks_passed": 1,
+    "certificate_size_points": 4,
+    "public_certificate_json_bytes_min": 3708,
+    "public_certificate_json_bytes_max": 3717,
+    "private_opening_bytes_dimension_1": 1630,
+    "private_opening_bytes_dimension_64": 3130,
+    "total_obligations": 43407
+  },
+  "telemetry": {
+    "workers": 1,
+    "cpu_seconds": 0.45988678099999997,
+    "wall_seconds": 0.4602575499999979,
+    "peak_rss_kib": 36092,
+    "total_process_cpu_seconds": 0.481564,
+    "address_space_cap_mib": 2048,
+    "rss_ceiling_mib": 2560,
+    "per_command_cpu_limit_seconds": 110,
+    "per_command_wall_limit_seconds": 120,
+    "mode": "full",
+    "obligations": 43407
+  }
+}

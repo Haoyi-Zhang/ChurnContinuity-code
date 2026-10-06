@@ -1,0 +1,21 @@
+{
+  "generation_a": [
+    10,
+    20,
+    7
+  ],
+  "generation_b": [
+    11,
+    22,
+    4
+  ],
+  "modulus": 101,
+  "reconstruction": 34,
+  "secret": 37,
+  "selected": [
+    10,
+    20,
+    4
+  ],
+  "selector": "001"
+}

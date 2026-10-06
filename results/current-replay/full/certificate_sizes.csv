@@ -1,0 +1,5 @@
+dimension,public_certificate_json_bytes,private_opening_statement_bytes,durable_component_scalars_across_six_copies,public_commitments,public_signatures,certificate_verified
+1,3712,1630,6,8,8,1
+8,3710,1797,48,8,8,1
+32,3717,2364,192,8,8,1
+64,3708,3130,384,8,8,1

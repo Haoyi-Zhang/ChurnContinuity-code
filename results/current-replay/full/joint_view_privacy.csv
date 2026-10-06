@@ -1,0 +1,9 @@
+role,secret,field_modulus,generator_log,randomness_assignments,distinct_joint_views,maximum_multiplicity,distribution_digest,matches_secret_zero,includes_private_openings,includes_blindings,includes_correlated_commitments,includes_signature_bytes
+retiring,0,2,1,512,128,4,11d3c80c7a9c490ffbcb53c7e2db9af565b2b228c0589a5a83bca9d883979466,1,1,1,1,0
+retiring,1,2,1,512,128,4,11d3c80c7a9c490ffbcb53c7e2db9af565b2b228c0589a5a83bca9d883979466,1,1,1,1,0
+survivor-a,0,2,1,512,512,1,503628c948c0e6c7c45d2785150b4edcff66357b2f52cc35cadea0d4e735395c,1,1,1,1,0
+survivor-a,1,2,1,512,512,1,503628c948c0e6c7c45d2785150b4edcff66357b2f52cc35cadea0d4e735395c,1,1,1,1,0
+survivor-b,0,2,1,512,512,1,b0c41f5d7a1740cf38dc07209b2a71bb87d9e5529f3c0fcbd06c3ec743f647e7,1,1,1,1,0
+survivor-b,1,2,1,512,512,1,b0c41f5d7a1740cf38dc07209b2a71bb87d9e5529f3c0fcbd06c3ec743f647e7,1,1,1,1,0
+replacement,0,2,1,512,512,1,84f44a5fca45595580ba404123b25fbe059ccdf6316ff931f433947bb0e5f3c2,1,1,1,1,0
+replacement,1,2,1,512,512,1,84f44a5fca45595580ba404123b25fbe059ccdf6316ff931f433947bb0e5f3c2,1,1,1,1,0

@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "algebra_obligations": 2052,
+    "replicated_obligations": 1944,
+    "shamir_obligations": 108,
+    "replicated_correct": 972,
+    "replicated_wrong": 972,
+    "shamir_correct": 72,
+    "shamir_wrong": 36,
+    "oracle_disagreements": 0,
+    "total_obligations": 2052
+  },
+  "telemetry": {
+    "workers": 1,
+    "cpu_seconds": 0.006847865000000002,
+    "wall_seconds": 0.007080152000000339,
+    "peak_rss_kib": 14920,
+    "total_process_cpu_seconds": 0.029217,
+    "address_space_cap_mib": 2048,
+    "rss_ceiling_mib": 2560,
+    "per_command_cpu_limit_seconds": 110,
+    "per_command_wall_limit_seconds": 120,
+    "mode": "pilot",
+    "obligations": 2052
+  }
+}

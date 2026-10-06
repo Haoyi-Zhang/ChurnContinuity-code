@@ -1,0 +1,11 @@
+{
+  "algebra_obligations": 2052,
+  "oracle_disagreements": 0,
+  "replicated_correct": 972,
+  "replicated_obligations": 1944,
+  "replicated_wrong": 972,
+  "shamir_correct": 72,
+  "shamir_obligations": 108,
+  "shamir_wrong": 36,
+  "total_obligations": 2052
+}
