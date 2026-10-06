@@ -87,8 +87,8 @@ corresponding refreshed component opening: `S_b` delivers `(delta_a,tau_a,
 checks the full context, signer, recipient, target component, mask commitment,
 component commitment, and both openings before persistence.  Thus the
 replacement obtains `z'_a,z'_b` only through authenticated protocol messages,
-not from a fixture or an unauthenticated side channel.  The survivors retain
-`z'_a,z'_k` and `z'_b,z'_k`, respectively, so the new physical layout remains
+not from a fixture or an unauthenticated side channel.  The survivors `S_a,S_b`
+retain `z'_b,z'_k` and `z'_a,z'_k`, respectively, so the new physical layout remains
 “server `i` stores every component except `i`.”  No protocol message gives one
 server all three components.
 
@@ -367,7 +367,13 @@ is idempotent; a conflicting
 value for the same durable key is rejected.  Activation accepts one full
 certificate and does not select “latest” local state.
 
-**Theorem 5 (crash safety).** Under crash-stop failures that preserve the
+Outbox persistence snapshots the signed message body, including nested lists;
+replay and receipt-return operations expose detached copies.  A caller's edit
+to a returned Python object therefore cannot rewrite an already persisted
+statement.  Direct mutation of the modeled durable dictionaries is not an
+admissible protocol transition.
+
+**Theorem 5 (crash safety).** Under crash-recovery failures that preserve the
 modeled durable dictionaries, any execution that activates a full certificate
 has the same committed state as a failure-free execution.  A finite replay of
 all durable session messages completes the protocol once all three new servers

@@ -1,0 +1,55 @@
+name: Scientific checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite-model:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+      README_ENTRY: README.md
+      MIN_EXPECTED_PYTHON_SOURCES: '14'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Run bounded owned finite checks from the flat artifact root
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p scientific-output
+          ulimit -v 2097152
+          ulimit -t 550
+          timeout --signal=TERM --kill-after=5s 600s bash -euo pipefail <<'CHECKS'
+          python -B -c 'import sys; assert not sys.flags.optimize; print(sys.version)' | tee scientific-output/runtime.txt
+          python -B -m pip install --no-compile --disable-pip-version-check -r requirements.txt 2>&1 | tee scientific-output/dependencies.txt
+          python -B -m pip freeze | tee scientific-output/installed-packages.txt
+          python -B .github/scripts/check_repository.py 2>&1 | tee scientific-output/material-integrity.txt
+          python -B reviewer_symbolic_check.py --out scientific-output/joint --check-retained 2>&1 | tee scientific-output/joint.txt
+          python -B run.py --pilot --out scientific-output/pilot 2>&1 | tee scientific-output/pilot.txt
+          python -B run.py --out scientific-output/full 2>&1 | tee scientific-output/full.txt
+          python -B validate.py --out scientific-output/validation --transcripts scientific-output/full/signed_transcripts.json 2>&1 | tee scientific-output/validation.txt
+          python -B -c 'import json; r=json.load(open("scientific-output/validation/validation.json")); assert r["unit_tests"] == 58 and r["unit_failures"] == 0 and r["unit_errors"] == 0' 2>&1 | tee scientific-output/test-count.txt
+          python -B verify.py results/full scientific-output/full 2>&1 | tee scientific-output/comparison.txt
+          python -B check_evidence.py --authorization inputs/authorized_signers.json --transcripts scientific-output/full/signed_transcripts.json 2>&1 | tee scientific-output/evidence.txt
+          CHECKS
+      - name: Upload raw outputs even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: scientific-output
+          path: scientific-output/
+          if-no-files-found: warn
+          retention-days: 14

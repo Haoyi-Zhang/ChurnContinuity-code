@@ -287,6 +287,58 @@ class ContractTests(unittest.TestCase):
         malformed=Statement(first.statement.context_id,first.statement.kind,first.statement.signer,first.statement.role,malformed_body)
         self.assertFalse(verify_equivocation(first,sign_statement(malformed,keys[malformed.signer]),context,auth,group))
 
+    def test_equivocation_requires_canonical_integer_fields(self):
+        group,context,_,keys,auth,bundle=self.continuity_fixture(dimension=1)
+        first=next(s for s in bundle.proposal_statements
+                   if s.statement.body['target_component']==1)
+        for side in (0,1):
+            for field in ('target_component','dimension'):
+                for value in (True,1.0):
+                    with self.subTest(side=side,field=field,value_type=type(value).__name__):
+                        bodies=[dict(first.statement.body),dict(first.statement.body)]
+                        bodies[1]['mask_commitment']=group.mul(bodies[1]['mask_commitment'],group.g(3))
+                        bodies[side][field]=value
+                        pair=[sign_statement(Statement(
+                            first.statement.context_id,first.statement.kind,
+                            first.statement.signer,first.statement.role,body),
+                            keys[first.statement.signer]) for body in bodies]
+                        self.assertFalse(verify_equivocation(*pair,context,auth,group))
+
+    def test_persist_outbox_snapshots_mutable_input(self):
+        group,context,_,_,_,bundle=self.continuity_fixture()
+        message=bundle.private_opening_statements[0]
+        server=DurableServer(message.statement.signer,1,group)
+        expected=message.export()
+        server.persist_outbox(context.identifier(),'owned-message',message)
+        message.statement.body['values'][0]=(message.statement.body['values'][0]+1)%group.q
+        stored=server.durable_outbox[(context.identifier(),'owned-message')]
+        self.assertEqual(stored.export(),expected)
+
+    def test_server_returns_detached_outbox_statements(self):
+        group,context,_,keys,_,bundle=self.continuity_fixture()
+        servers=complete_transfer(bundle,keys,group)
+        first=bundle.proposal_statements[0]
+        signer=first.statement.signer;target=first.statement.body['target_component']
+        server=servers[signer];slot=server.physical_slot
+        expected=tuple(s.export() for s in server.replay_survivor_transfer(context,target))
+        replay=server.replay_survivor_transfer(context,target)
+        replay[1].statement.body['values'][0]=(replay[1].statement.body['values'][0]+1)%group.q
+        self.assertEqual(tuple(s.export() for s in server.replay_survivor_transfer(context,target)),expected)
+        k=context.replaced_slot;a,b=(k+1)%3,(k+2)%3
+        peer=context.old_members[b] if slot==a else context.old_members[a]
+        proposal=server.persist_survivor_outbox_item(
+            context,target,bundle.old_state.holdings(slot)[target],
+            bundle.old_state.commitments[target],bundle.mask_commitments[target],
+            bundle.new_state.commitments[target],peer,context.new_members[k],keys[signer],
+            f'proposal:{target}')
+        proposal.statement.body['dimension']+=1
+        self.assertEqual(tuple(s.export() for s in server.replay_survivor_transfer(context,target)),expected)
+        receipt=server.issue_receipt(context,target,bundle.new_state.commitments[target],keys[signer])
+        receipt_before=receipt.export()
+        receipt.statement.body['generation']='caller-edit'
+        self.assertEqual(server.issue_receipt(
+            context,target,bundle.new_state.commitments[target],keys[signer]).export(),receipt_before)
+
     def test_exact_single_server_privacy_views(self):
         rows,obligations=privacy_checks()
         self.assertEqual(len(rows),15)

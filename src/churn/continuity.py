@@ -472,7 +472,7 @@ class DurableServer:
             raise ValueError("unknown survivor outbox label") from exc
         context_id = context.identifier()
         self.persist_outbox(context_id, label, messages[index])
-        return self.durable_outbox[(context_id, label)]
+        return copy.deepcopy(self.durable_outbox[(context_id, label)])
 
     def resume_survivor_transfer(
         self,
@@ -514,7 +514,8 @@ class DurableServer:
             f"replacement-component:{target_component}",
         )
         try:
-            return tuple(self.durable_outbox[(context_id, label)] for label in labels)  # type: ignore[return-value]
+            return tuple(copy.deepcopy(self.durable_outbox[(context_id, label)])
+                         for label in labels)  # type: ignore[return-value]
         except KeyError as exc:
             raise ValueError("survivor outbox is incomplete") from exc
 
@@ -537,7 +538,9 @@ class DurableServer:
         old = self.durable_outbox.get(key)
         if old is not None and old != signed:
             raise ValueError("durable outbox entry is immutable")
-        self.durable_outbox[key] = signed
+        # Frozen dataclasses do not freeze nested statement dictionaries/lists.
+        # Persist a detached snapshot, not the caller's mutable message body.
+        self.durable_outbox[key] = copy.deepcopy(signed)
 
     def has_component(self, context_id: str, component: int, commitment: int,
                       *, expected_dimension: int | None = None) -> bool:
@@ -566,7 +569,7 @@ class DurableServer:
         signed = sign_statement(statement, key)
         label = f"receipt:{component}"
         self.persist_outbox(context_id, label, signed)
-        return self.durable_outbox[(context_id, label)]
+        return copy.deepcopy(self.durable_outbox[(context_id, label)])
 
     def crash(self) -> None:
         self.volatile.clear()
@@ -1164,6 +1167,10 @@ def verify_equivocation(left: SignedStatement, right: SignedStatement,
         expected = {"target_component", "mask_commitment", "dimension"}
         if set(a.body) != expected or set(b.body) != expected:
             return False
+        for body in (a.body, b.body):
+            if (type(body["target_component"]) is not int or
+                    type(body["dimension"]) is not int):
+                return False
         if (a.body["target_component"] != b.body["target_component"] or
                 a.body["dimension"] != context.dimension or
                 b.body["dimension"] != context.dimension):

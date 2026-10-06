@@ -78,6 +78,13 @@ python check_evidence.py \
 Each output directory must be absent or empty.  The runner never silently
 overwrites scientific results.
 
+The unit suite is also runnable directly with `python -B -m unittest discover
+-s tests -v`. The Linux-only bounded drivers are not required for that command.
+The prepared `scientific-checks.yml` workflow uses the flat artifact root on
+Ubuntu 24.04, a 12-minute job bound and a 600-second whole-check bound, retaining
+the per-run limits, result-comparison gates, and raw outputs on failure. It has
+not been executed remotely as part of this local repair.
+
 ## Retained result inventory
 
 `results/full/` contains the deterministic campaign outputs:
@@ -104,7 +111,14 @@ overwrites scientific results.
 
 The complete campaign contains 43,407 counted obligations and 1,000 generated
 schedule/fault/protocol cases.  All 32 continuity cases matched their frozen
-oracles, and all 55 unit and boundary tests passed.  The algebraic privacy oracle
+oracles, and all 55 tests in the retained Linux validation passed. The current
+suite contains 58 tests and passed in a separate Windows execution. Its three
+added regressions check canonical integer fields in equivocation evidence,
+snapshotting of mutable outbox inputs, and detached replay/receipt returns.
+The same campaign functions regenerated 16 raw scientific files byte-for-byte
+on Windows and matched the recomputed summary counts; this did not execute the
+Linux resource-limited drivers or replace historical Linux telemetry.
+The algebraic privacy oracle
 compared 9,375 private subviews and found the same exact distribution for every
 secret in each active role.  The independent joint-view checker compared 4,096
 exact `F_2` views across four roles and ran 64 finite-field rank checks; it
