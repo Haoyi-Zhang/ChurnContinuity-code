@@ -87,6 +87,15 @@ not been executed remotely as part of this local repair.
 
 ## Retained result inventory
 
+The implementation reuses only public generator constants for blinding and
+coordinates 0--63 in a 256-entry cache keyed by the exact integer group
+parameters and label. Hash domain, counter search, and subgroup acceptance are
+unchanged; other coordinates and customized subclasses remain uncached. No
+private opening, blinding, signature, durable fact, or verdict is cached. The
+separate `python -B tests/regression_public_generators.py -v` check runs explicitly
+in scientific CI, preserves the frozen 58-test census, and checks independent
+literal derivation and retained physical outputs. No speedup is measured here.
+
 `results/full/` contains the deterministic campaign outputs:
 
 - `algebra.csv`, `rings.csv`, `counterexample.json`: exact mixed-generation

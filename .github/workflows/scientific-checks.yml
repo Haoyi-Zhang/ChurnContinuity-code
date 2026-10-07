@@ -37,6 +37,7 @@ jobs:
           python -B -m pip install --no-compile --disable-pip-version-check -r requirements.txt 2>&1 | tee scientific-output/dependencies.txt
           python -B -m pip freeze | tee scientific-output/installed-packages.txt
           python -B .github/scripts/check_repository.py 2>&1 | tee scientific-output/material-integrity.txt
+          timeout --signal=TERM --kill-after=5s 60s python -B tests/regression_public_generators.py -v 2>&1 | tee scientific-output/public-generators.txt
           python -B reviewer_symbolic_check.py --out scientific-output/joint --check-retained 2>&1 | tee scientific-output/joint.txt
           python -B run.py --pilot --out scientific-output/pilot 2>&1 | tee scientific-output/pilot.txt
           python -B run.py --out scientific-output/full 2>&1 | tee scientific-output/full.txt

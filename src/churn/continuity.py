@@ -16,6 +16,7 @@ components.
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
+from functools import lru_cache
 from typing import Any, Iterable
 import copy
 import hashlib
@@ -81,11 +82,16 @@ class TinyVectorPedersen:
 
     @property
     def h(self) -> int:
+        if type(self) is TinyVectorPedersen and type(self.p) is int and type(self.q) is int:
+            return _public_generator(self.p, self.q, "blinding")
         return self._generator("blinding")
 
     def g(self, index: int) -> int:
         if type(index) is not int or index < 0:
             raise ValueError("nonnegative generator index required")
+        if (index < 64 and type(self) is TinyVectorPedersen and
+                type(self.p) is int and type(self.q) is int):
+            return _public_generator(self.p, self.q, f"coordinate:{index}")
         return self._generator(f"coordinate:{index}")
 
     def validate_vector(self, values: Iterable[int]) -> tuple[int, ...]:
@@ -124,6 +130,17 @@ class TinyVectorPedersen:
 
     def div(self, numerator: int, denominator: int) -> int:
         return self.mul(numerator, self.inv(denominator))
+
+
+@lru_cache(maxsize=256)
+def _public_generator(p: int, q: int, label: str) -> int:
+    """Reuse only public group/label constants, using the unchanged derivation.
+
+    h and coordinates 0..63 use this bounded cache; other coordinates and
+    customized subclasses retain their uncached behavior. No opening, mask,
+    blinding, signed statement, or verification result enters the cache.
+    """
+    return TinyVectorPedersen(p, q)._generator(label)
 
 
 @dataclass(frozen=True)
