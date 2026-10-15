@@ -1,166 +1,128 @@
-# Accountable continuity for secret-shared recommendation epochs
+# Continuity certificates for secret-shared recommendation epochs
 
-This standalone repository contains the reference model, exact finite checks,
-written proof arguments, synthetic inputs, and retained results for a
-three-server continuity-certificate layer.  It does not require the paper
-directory, a private dataset, a GPU, an external service, or a model API.
+This standalone artifact models a three-server continuity-certificate layer
+for serial replacement of one physical server in a 2-of-3
+replicated-additive layout. It supplies certificate and receipt verification,
+a logical durable-store/crash model, synthetic inputs, finite checks, written
+proof arguments, and retained results. It has no dependency on the paper,
+a private dataset, GPU, external service, or model API.
 
-## Scope
+Two survivors refresh components using random masks. Authenticated private
+envelopes carry openings; the public certificate binds commitment links,
+signed mask commitments, and two persist-before-sign receipts per component.
+The earlier mixed-generation controls remain part of the artifact.
 
-The implemented refinement uses the physical 2-of-3 replicated-additive layout:
-server `i` stores the two additive components whose indices differ from `i`.
-One physical slot is replaced at a time.  Two survivors refresh the two
-components delivered to the replacement and subtract the same random masks from
-their common component.  The replacement obtains those components only through
-two authenticated private envelopes, each binding a mask opening to the
-corresponding refreshed component opening.  A public certificate contains
-homomorphic commitment links, two signed mask commitments, and two durable
-receipts per component.  Receipts can be issued only after the named server has
-verified and durably stored the matching opening.
+## Setup
 
-The general arguments establish, under the explicit assumptions in
-`proofs/arguments.md`:
+Use Python 3.11+ and install the runtime dependency from this repository root:
 
-- receipt-backed preservation of the shared vector across one replacement and,
-  under exact handoff and context invariants, across a bounded serial chain;
-- exactly-once inclusion when the certified base vector is tied to a sealed
-  stable-ID cut;
-- static protocol-following one-server privacy for the continuity layer over a prime field, with a role-defined joint simulator;
-- one-fault post-activation component availability from two-holder receipts;
-- crash-safe deterministic replay under the modeled durable-store contract;
-- positive evidence for an independently signed invalid peer-mask opening or
-  same-context equivocation, but not for silence.
+```sh
+python -m pip install -r requirements.txt
+```
 
-The repository also retains the earlier exact mixed-generation criterion and
-negative controls.  Those checks show why logical content equality, an attempt
-number, or “latest” storage does not replace full generation binding.
-
-## Important non-claims
-
-- The tiny `(p,q)=(2039,1019)` Pedersen fixture is for algebraic checking, not a
-  production security parameter.
-- The concrete protocol uses a prime field.  Nudge uses arithmetic over a
-  power-of-two ring; a ring-compatible commitment/proof instantiation is not
-  supplied here.
-- No Byzantine consensus, membership authorization service, network stack,
-  recommendation training, production `fsync`, mobile-corruption defense, or
-  two-server privacy theorem is implemented.
-- Local times are not service latency or throughput results.
-- Written proofs and finite checks are not proof-assistant certification or
-  independent peer review.
-
-## Requirements
-
-- Linux with Python 3.11 or later
-- `cryptography` (see `requirements.txt`)
-- one CPU worker; the runner enforces a 2 GiB address-space limit, a 110-second
-  CPU limit, and a 120-second wall timer
-
-The retained campaign used no GPU, swap, external compute, private input, or
-external model/API execution.
+`cryptography` provides Ed25519; it is not bundled or claimed as original work.
+Linux is required for `run.py` and `validate.py`, which enforce affinity,
+one worker, a 2-GiB address-space limit, a 110-second CPU limit, and a
+120-second wall timer. The unit suite and focused symbolic/evidence checks
+also run on Windows without those Linux driver limits.
 
 ## Reproduce
 
-From the repository root:
+Use absent or empty output directories:
 
 ```sh
-python reviewer_symbolic_check.py --out reproduced-joint-view
+python reviewer_symbolic_check.py --out reproduced-joint-view --check-retained
 python run.py --pilot --out reproduced-pilot
 python run.py --out reproduced
-python validate.py --out validation-reproduced \
-  --transcripts reproduced/signed_transcripts.json
+python validate.py --out validation-reproduced --transcripts reproduced/signed_transcripts.json
 python verify.py results/full reproduced
-python check_evidence.py \
-  --authorization inputs/authorized_signers.json \
-  --transcripts reproduced/signed_transcripts.json
+python check_evidence.py --authorization inputs/authorized_signers.json --transcripts reproduced/signed_transcripts.json
 ```
 
-Each output directory must be absent or empty.  The runner never silently
-overwrites scientific results.
+The bounded drivers reject nonempty output directories.
+`verify.py` compares all 17 deterministic scientific files byte for byte and
+checks frozen summary values. Timing, resident-memory, and profiler records
+are host measurements, not deterministic outputs or service-performance data.
+Do not overwrite `results/full/` with a replay.
 
-The unit suite is also runnable directly with `python -B -m unittest discover
--s tests -v`. The Linux-only bounded drivers are not required for that command.
-The prepared `scientific-checks.yml` workflow uses the flat artifact root on
-Ubuntu 24.04, a 12-minute job bound and a 600-second whole-check bound, retaining
-the per-run limits, result-comparison gates, and raw outputs on failure. It has
-not been executed remotely as part of this local repair.
+Focused checks:
 
-## Retained result inventory
-
-The implementation reuses only public generator constants for blinding and
-coordinates 0--63 in a 256-entry cache keyed by the exact integer group
-parameters and label. Hash domain, counter search, and subgroup acceptance are
-unchanged; other coordinates and customized subclasses remain uncached. No
-private opening, blinding, signature, durable fact, or verdict is cached. The
-separate `python -B tests/regression_public_generators.py -v` check runs explicitly
-in scientific CI, preserves the frozen 58-test census, and checks independent
-literal derivation and retained physical outputs. No speedup is measured here.
-
-`results/full/` contains the deterministic campaign outputs:
-
-- `algebra.csv`, `rings.csv`, `counterexample.json`: exact mixed-generation
-  checks and counterexample;
-- `schedules.csv`, `event_orders.csv`, `crashes.csv`, `semantics.csv`: original
-  generation-binding and crash controls;
-- `evidence.csv`, `signed_transcripts.json`: the original signed contradiction
-  corpus;
-- `continuity_cases.csv`: 32 physical-layout cases (one honest path, 20
-  persistence-boundary crash/replay cases, five certificate mutations, three
-  verifier ablations, one unchanged cross-context receipt transplant, and two
-  positive evidence cases);
-- `privacy_views.csv`: exact algebraic private-subview distributions for all five
-  secrets in the `F_5` oracle and all three active roles;
-- `joint_view_privacy.csv`, `joint_view_privacy.json`: one-coordinate joint
-  private/public views for four protocol-following roles, including blindings and
-  all eight correlated commitments, plus finite-field rank witnesses;
-- `certificate_sizes.csv`: dimensions 1, 8, 32, and 64;
-- `continuity_certificate.json`, `continuity_evidence.json`: one complete public
-  certificate and bounded evidence samples;
-- `scientific_summary.json` and `telemetry.json`.
-
-The complete campaign contains 43,407 counted obligations and 1,000 generated
-schedule/fault/protocol cases.  All 32 continuity cases matched their frozen
-oracles, and all 55 tests in the retained Linux validation passed. The current
-suite contains 58 tests and passed in a separate Windows execution. Its three
-added regressions check canonical integer fields in equivocation evidence,
-snapshotting of mutable outbox inputs, and detached replay/receipt returns.
-The same campaign functions regenerated 16 raw scientific files byte-for-byte
-on Windows and matched the recomputed summary counts; this did not execute the
-Linux resource-limited drivers or replace historical Linux telemetry.
-The algebraic privacy oracle
-compared 9,375 private subviews and found the same exact distribution for every
-secret in each active role.  The independent joint-view checker compared 4,096
-exact `F_2` views across four roles and ran 64 finite-field rank checks; it
-includes blindings and correlated commitments but not actual signature bytes.  The reference JSON
-certificate is 3,708--3,717 bytes across the four vector dimensions, while the
-four authenticated private envelopes grow from 1,630 to 3,130 bytes.
-
-The legacy 720-order control remains intentionally discriminating: content-only
-and attempt-only latest-state policies each return 540 wrong values; full
-immutable generation pinning returns 720 correct values.  These are exact
-outcomes of synthetic fixtures, not estimates of deployment failure rates.
-
-## Repository map
-
-```text
-src/churn/continuity.py              physical protocol and certificate verifier
-src/churn/continuity_experiments.py  algebraic privacy, crash, mutation, and size checks
-src/churn/joint_view.py              independent one-coordinate joint-view checker
-reviewer_symbolic_check.py           runnable joint-view checker entry point
-src/churn/algebra.py                 mixed-generation arithmetic checks
-src/churn/model.py                   stable-ID ledger and ideal durable-slot model
-src/churn/evidence.py                original signed contradiction predicate
-proofs/arguments.md                  theorem statements and written proofs
-docs/interfaces.md                   assumption and evidence map
-tests/test_contract.py               unit and boundary tests
-claim_evidence_ledger.csv            claim-to-evidence ledger
-external_resources.csv               scholarly/tool source ledger
-reference-audit.csv                  all 67 bibliography records, locators, audit tier, and citation counts
+```sh
+python -B -m unittest discover -s tests -v
+python -B tests/regression_public_generators.py -v
+python -B tests/regression_bibliography.py -v
+python -B reviewer_symbolic_check.py --check-retained
+python -B check_evidence.py --authorization inputs/authorized_signers.json --transcripts results/full/signed_transcripts.json
 ```
 
-## Evidence interpretation
+The discovery suite has 58 methods; the generator and bibliography regressions
+are separate explicit CI steps. The scientific Actions workflow runs these,
+both bounded campaigns, validation, and output comparison on Ubuntu 24.04,
+with a 12-minute job limit and a 600-second whole-check limit.
+Raw outputs are retained on success or failure.
 
-A successful command establishes that the local checks completed and matched
-their frozen oracles.  It does not by itself prove a general theorem.  The main
-scientific claims must be read together with `proofs/arguments.md`, the explicit
-assumptions, the negative controls, and the claim ledger.
+## Inputs and retained results
+
+`inputs/sparse_ratings.json` contains eight deliberately public synthetic
+rating records, used as the transferred vector rather than training data.
+`inputs/specification.json` defines the original arithmetic and fault domains;
+the physical continuity cases add 32 cases to its 968 legacy cases.
+`inputs/authorized_signers.json` is a separate toy authorization anchor;
+fixture seeds are public and must not be used as deployment keys.
+`inputs/resource-envelope.json` records resource intake and campaign limits.
+
+`results/full/` retains:
+
+- arithmetic/ring rows and the mixed-generation counterexample;
+- schedule permutations, event orders, crash controls, and semantics rows;
+- signed contradiction transcripts and their expected verdicts;
+- 32 physical continuity cases, including crash/replay, mutations, ablations,
+  context-transplant rejection, and positive evidence controls;
+- private-subview distributions and joint private/public-view checks;
+- certificate sizes at dimensions 1, 8, 32, and 64;
+- a complete public certificate, bounded evidence samples, summary, and telemetry.
+
+The frozen campaign has 43,407 counted obligations and 1,000 generated
+schedule/fault/protocol cases. The private-subview oracle covers 9,375
+`F_5` assignments; the separate joint-view checker covers 4,096 exact
+one-coordinate `F_2` views and 64 finite-field rank checks.
+The joint checker includes blindings and eight correlated commitments but
+not actual signature bytes. These finite checks support, not replace,
+the written arguments.
+
+The legacy 720-order fixture intentionally distinguishes policies:
+content-only and attempt-only selection each produce 540 wrong values,
+while immutable generation pinning produces 720 correct values.
+These are synthetic exact outcomes, not deployment failure-rate estimates.
+Historical test counts and telemetry in `results/` describe their original runs.
+
+## Code, assumptions, and licenses
+
+`src/churn/continuity.py` implements the physical protocol and verifier;
+`src/churn/continuity_experiments.py` supplies its finite controls.
+`src/churn/joint_view.py` is the separate one-coordinate checker.
+`src/churn/algebra.py`, `src/churn/model.py`, and `src/churn/evidence.py` retain the original arithmetic,
+stable-ID ledger, durable-slot model, and signed contradiction predicate.
+
+`proofs/arguments.md` gives the mathematical arguments.
+`docs/interfaces.md`, `docs/THREAT-PROPERTY-MATRIX.md`, and
+`docs/ASSUMPTION-COUNTEREXAMPLES.md` specify acceptance predicates,
+adversary scopes, and necessary premises. In particular, receipt-backed
+semantic continuity requires authenticated old openings and an honest durable
+holder per component; public commitment consistency alone is not plaintext
+equality. Exactly-once inclusion requires the sealed stable-ID cut premises.
+Privacy is for one static protocol-following server under the declared
+slot/non-reentry restrictions, not mobile or two-server corruption.
+Positive signed contradictions can support accountability; silence cannot.
+
+The tiny `(p,q)=(2039,1019)` group is an algebraic fixture, not a production
+security parameter. The protocol uses a prime field; no Nudge power-of-two-ring
+instantiation, network stack, Byzantine consensus, recommendation training,
+or production `fsync` implementation is supplied. Written proofs and separate
+code paths are not proof-assistant certification or independent human review.
+
+`claim_evidence_ledger.csv` maps claims to proofs and raw evidence.
+`reference-audit.csv` and `external_resources.csv` retain source identities
+and access depth. Code and original fixtures use `LICENSE`;
+`THIRD-PARTY-NOTICES.md` preserves dependency and external-resource notices.
+Scholarly PDFs and third-party implementations are not redistributed.
